@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    position: relative;
+}
+
+#header img {
+    max-width: 100%;
+    display: block;
+}
+
+#header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../images/overlay-pattern.png) #000;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+
+.fa-bars {
+    color: red;
+    font-size: 1.3em;
+}
+
+#navbar {
+    position: relative;
+    bottom: 55px;
+    left: 0;
+    right: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 10px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* menu dropdown */
+#menuBottone {
+    display: none;
+}
+
+nav ul {
+    transition: all 0.5s;
+    overflow: hidden;
+    height: 0;
+    flex-basis: 100%;
+    margin-top: 25px;
+}
+
+nav ul li {
+    line-height: 2;
+    padding-left: 10px;
+}
+
+nav ul a::after {
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color: orangered;
+    content: '';
+}
+
+nav ul a:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    text-decoration: none;
+    color: black;
+
+}
+
+input[type='checkbox']:checked+ul {
+    height: 210px;
+}
