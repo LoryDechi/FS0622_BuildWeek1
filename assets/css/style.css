@@ -1,3 +1,4 @@
+/* REGOLE GENERALI */
 * {
     padding: 0;
     margin: 0;
@@ -50,8 +51,31 @@ a:active {
     line-height: 2.5em;
 }
 
+.titoli .orange {
+    font-size: 28px;
+    font-weight: 600
+}
 
+.orange {
+    color: #FF4F02;
+}
+
+.titoli:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 140px;
+    height: 1px;
+    background: #C8C1B3;
+    margin-left: -70px;
+}
+
+
+
+/* HEADER */
 .material-symbols-outlined {
+    color: #e94c3d;
     font-size: 2em;
     font-variation-settings:
         'FILL' 0,
@@ -80,11 +104,6 @@ a:active {
     height: 100%;
     width: 100%;
     opacity: 0.3;
-}
-
-.fa-bars {
-    color: #e94c3d;
-    font-size: 1.3em;
 }
 
 #navbar {
@@ -145,11 +164,60 @@ input[type='checkbox']:checked+ul {
     height: 250px;
 }
 
-/* FOOTER */
-
-span {
-    color: #FF4F02;
+/* MAIN */
+main section {
+    width: 95%;
+    margin: 0 auto;
 }
+
+#contatti {
+    padding: 100px 0;
+}
+
+#contatti h2 {
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#contatti h3 {
+    padding: 20px 0;
+}
+
+#contatti form {
+    margin-bottom: 20px;
+}
+
+#contatti form input {
+    height: 48px;
+}
+
+#contatti form textarea {
+    height: 140px;
+}
+
+#contatti form .form-rules {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#contatti form .form-rules:focus {
+    outline: 1px solid #7EC3BB;
+}
+
+#contatti button {
+    width: 100%;
+    background-color: #FF4F02;
+    border: none;
+    color: white;
+    padding: 20px 80px;
+    font-weight: 600;
+}
+
+/* FOOTER */
 
 ul,
 a {
@@ -159,7 +227,7 @@ a {
 }
 
 #footer {
-    padding: 20px 20px;
+    padding: 100px 20px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -180,13 +248,10 @@ a {
     margin-bottom: 25px;
 }
 
-<<<<<<< HEAD
-#footer #info,#blog,#photo_social{
+#footer #info,
+#blog,
+#photo_social {
     padding-bottom: 20px;
-=======
-#footer div {
-    padding-bottom: 50px;
->>>>>>> 735e820962646e99577528e7d0c7e3619a149c5d
 }
 
 #footer i {
@@ -203,7 +268,7 @@ a {
     font-weight: 600;
 }
 
-#footer #photo{
+#footer #photo {
     padding-bottom: 30px;
 }
 
@@ -251,13 +316,22 @@ a {
 
 @media screen and (min-width: 768px) {
 
+    .titoli {
+        font-size: 36px;
+    }
+
+    .titoli .orange {
+        font-size: 45px;
+    }
+
     /* HEADER */
     #menu {
         display: none;
     }
 
     nav,
-    #footer {
+    #footer,
+    main section {
         width: 750px;
     }
 
@@ -287,6 +361,22 @@ a {
         text-align: center;
     }
 
+    /* MAIN */
+    #contatti {
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #contatti h3 {
+        text-align: left;
+    }
+
+    #contatti button {
+        width: 512px;
+        height: 50px;
+    }
+
     /* FOOTER */
     .contact_info {
         display: flex;
@@ -311,6 +401,15 @@ a {
 
     #navbar nav ul {
         flex-basis: 60%;
+    }
+
+    /* MAIN */
+    main section {
+        width: 970px;
+    }
+
+    #contatti button {
+        float: right;
     }
 
 
@@ -340,7 +439,8 @@ a {
 @media screen and (min-width: 1200px) {
 
     nav,
-    #footer {
+    #footer,
+    main section {
         width: 1170px;
     }
 
