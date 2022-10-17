@@ -47,6 +47,7 @@ a:focus,
 a:active {
     text-decoration: none;
     font-size: 15px;
+    line-height: 2.5em;
 }
 
 
@@ -98,8 +99,8 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: -80px;
-    padding: 20px 40px 0 10px;
+    margin-top: -70px;
+    padding: 20px 20px 40px 10px;
     background: linear-gradient(45deg, white 10%, rgba(255, 255, 255, 0.6));
 }
 
@@ -117,13 +118,7 @@ nav ul {
 }
 
 nav ul li {
-    line-height: 2;
     padding-left: 10px;
-}
-
-nav ul li a {
-    display: inline-block;
-    text-align: center;
 }
 
 nav ul a::after {
@@ -147,7 +142,7 @@ nav ul li a:visited {
 }
 
 input[type='checkbox']:checked+ul {
-    height: 210px;
+    height: 250px;
 }
 
 /* FOOTER */
@@ -254,6 +249,10 @@ a {
         display: none;
     }
 
+    nav {
+        width: 750px;
+    }
+
     #navbar nav {
         align-items: baseline;
         padding-right: 0;
@@ -276,6 +275,8 @@ a {
     #navbar nav ul li a {
         padding: 10px 0px;
         font-size: 15px;
+        display: inline-block;
+        text-align: center;
     }
 
     /* FOOTER */
@@ -295,6 +296,20 @@ a {
 }
 
 @media screen and (min-width: 992px) {
+
+    /* Header */
+
+    nav {
+        width: 970px;
+        margin-top: -90px;
+        padding: 30px 20px 40px 30px;
+    }
+
+    #navbar nav ul {
+        flex-basis: 60%;
+    }
+
+
     #footer {
         flex-direction: row;
         justify-content: center;
@@ -312,5 +327,15 @@ a {
 
     .flex_photo {
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    nav {
+        width: 1170px;
+    }
+
+    #navbar nav ul {
+        flex-basis: 50%;
     }
 }
