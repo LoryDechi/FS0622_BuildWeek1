@@ -4,6 +4,61 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+}
+
+body {
+    font-family: myfont;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0px;
+    font-family: myfont;
+}
+
+ul {
+    list-style: none;
+}
+
+a,
+a:active,
+a:focus,
+a:active {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+.material-symbols-outlined {
+    font-size: 2em;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
 #header {
     position: relative;
 }
@@ -20,7 +75,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(../images/overlay-pattern.png) #000;
+    background: url(../images/overlay-pattern.png) #000000;
     height: 100%;
     width: 100%;
     opacity: 0.3;
@@ -43,10 +98,9 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: -85px;
-    background: #fff;
-    padding: 25px 40px;
-    background: rgba(255, 255, 255, 0.89);
+    margin-top: -80px;
+    padding: 20px 40px 0 10px;
+    background: linear-gradient(45deg, white 10%, rgba(255, 255, 255, 0.6));
 }
 
 /* menu dropdown */
@@ -59,12 +113,17 @@ nav ul {
     overflow: hidden;
     height: 0;
     flex-basis: 100%;
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 nav ul li {
     line-height: 2;
     padding-left: 10px;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-align: center;
 }
 
 nav ul a::after {
@@ -91,65 +150,83 @@ input[type='checkbox']:checked+ul {
     height: 210px;
 }
 
-span{
+/* FOOTER */
+
+span {
     color: #FF4F02;
 }
-ul,a{
+
+ul,
+a {
     text-decoration: none;
     list-style: none;
     color: #555;
 }
-#footer{
+
+#footer {
     padding: 70px 20px;
     display: flex;
     flex-direction: column;
 }
-#footer h3{
+
+#footer h3 {
     margin-bottom: 30px;
 }
-#footer ul{
+
+#footer ul {
     margin-bottom: 50px;
 }
-#footer #info li{
+
+#footer #info li {
     line-height: 2;
 }
-#footer #blog li{
+
+#footer #blog li {
     line-height: 1.3;
 }
-#footer #blog li p{
+
+#footer #blog li p {
     margin-bottom: 20px;
 }
-#footer i{
+
+#footer i {
     color: #555;
     font-size: 20px;
 }
-.contact_info i{
+
+.contact_info i {
     margin-right: 30px;
     font-size: 20px;
 }
-.blog_post h4{
+
+.blog_post h4 {
     color: #FF4F02;
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 10px;
 }
-.flex_photo{
+
+.flex_photo {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.flex_photo li{
+
+.flex_photo li {
     margin-bottom: 25px;
     display: inline-block;
     margin-right: 20px
 }
-.social_footer{
+
+.social_footer {
     margin-top: 20px;
 }
-.social_footer li{
+
+.social_footer li {
     transition: .3s all;
 }
-.social_footer a{
+
+.social_footer a {
     display: block;
     text-align: center;
     width: 40px;
@@ -158,42 +235,82 @@ ul,a{
     border-radius: 100%;
     background: #B0B0B0;
 }
-.social_footer a i{
+
+.social_footer a i {
     color: #FFFFFF;
 }
+
 #footer-bottom {
     background: #E9E9E9;
     padding: 20px 20px;
     text-align: center;
     width: 100%;
 }
-@media screen and (min-width: 768px){
-    #footer{
+
+@media screen and (min-width: 768px) {
+
+    /* HEADER */
+    #menu {
+        display: none;
+    }
+
+    #navbar nav {
+        align-items: baseline;
+        padding-right: 0;
+    }
+
+    #navbar nav ul {
+        height: 60px;
+        display: flex;
+        overflow: visible;
+        flex-basis: 71%;
+        margin-top: 0;
+    }
+
+    #navbar nav ul li {
+        text-align: center;
+        padding-left: 0;
+        margin: 0 18px 0px 20px;
+    }
+
+    #navbar nav ul li a {
+        padding: 10px 0px;
+        font-size: 15px;
+    }
+
+    /* FOOTER */
+    #footer {
         padding: 70px 100px;
     }
-    .contact_info{
+
+    .contact_info {
         display: flex;
-        flex-direction: row;  
+        flex-direction: row;
     }
-    .contact_info li{
+
+    .contact_info li {
         margin-right: 20px;
         font-size: 15px;
     }
 }
-@media screen and (min-width: 992px){
-    #footer{
+
+@media screen and (min-width: 992px) {
+    #footer {
         flex-direction: row;
         justify-content: center;
         align-items: center;
         padding: 70px 30px;
     }
-    #footer div{
+
+    #footer div {
         margin-right: 50px;
     }
-    .contact_info{
-        flex-direction: column;  
+
+    .contact_info {
+        flex-direction: column;
     }
-    .flex_photo{
+
+    .flex_photo {
         flex-wrap: wrap;
     }
 }
