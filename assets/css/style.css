@@ -159,7 +159,7 @@ a {
 }
 
 #footer {
-    padding: 40px 20px;
+    padding: 20px 20px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -180,8 +180,8 @@ a {
     margin-bottom: 25px;
 }
 
-#footer div{
-    padding-bottom: 50px;
+#footer #info,#blog,#photo_social{
+    padding-bottom: 20px;
 }
 
 #footer i {
@@ -196,6 +196,10 @@ a {
     color: #FF4F02;
     font-size: 20px;
     font-weight: 600;
+}
+
+#footer #photo{
+    padding-bottom: 30px;
 }
 
 .flex_photo {
@@ -234,7 +238,7 @@ a {
 
 #footer-bottom {
     background: #E9E9E9;
-    padding: 20px 20px;
+    padding: 13px 20px;
     text-align: center;
     width: 100%;
 }
