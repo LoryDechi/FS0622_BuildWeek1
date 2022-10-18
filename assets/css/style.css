@@ -60,7 +60,7 @@ a:active {
     color: #FF4F02;
 }
 
-.titoli{
+.titoli {
     padding: 40px 0;
     color: #2e2e2e;
     font-size: 22px;
@@ -116,6 +116,7 @@ a:active {
 #navbar {
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 nav {
@@ -126,8 +127,8 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     margin-top: -85px;
-    padding: 20px 20px 40px 20px;
-    background: linear-gradient(45deg, white 10%, rgba(255, 255, 255, 0.6));
+    padding: 15px 20px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.6), #ffffff);
 }
 
 /* menu dropdown */
@@ -163,7 +164,7 @@ nav ul a:hover::after {
 nav ul li a:link,
 nav ul li a:visited {
     text-decoration: none;
-    color: black;
+    color: #2E2E2E;
 
 }
 
@@ -172,48 +173,66 @@ input[type='checkbox']:checked+ul {
 }
 
 /* MAIN */
-main section {
+main section .container {
     width: 95%;
     margin: 0 auto;
 }
+
 /* SECTION GALLERY */
-#gallery{
+#gallery {
     background-image: url('../images/blog/blog-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding: 75px 15px 100px 15px;
+    padding: 75px 0px 100px 0px;
     position: relative;
     text-align: center;
 }
 
-#gallery .titoli{
+#gallery .titoli {
     color: white;
-    padding-bottom: 50px;
 }
 
-.container{
+.container {
     padding-top: 40px;
     position: relative;
 }
 
-.content{
+.container-title {
+    padding-bottom: 40px;
+}
+
+.content {
     height: 100%;
     background-color: white;
 }
-.content .content_img img{
+
+.content .content_img img {
     width: 100%;
+    margin: -5px;
 }
-.content .content_body{
+
+.content .content_img {
+    overflow: hidden;
+}
+
+.content .content_img img:hover {
+    transform: scale(1.2) rotate(10deg);
+    transition: all 0.8s ease-out;
+}
+
+.content .content_body {
     padding: 20px 35px;
 }
-.content .content_body h3{
+
+.content .content_body h3 {
     padding: 0 40px 20px;
     line-height: 26px;
     position: relative;
     color: #323232;
 }
-.content .content_body h3::before{
+
+.content .content_body h3::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -224,8 +243,21 @@ main section {
     margin-left: -45px;
 }
 
-.content .content_body p{
+.content .content_body p {
     padding-top: 25px;
+    color: #959595
+}
+
+.container-btn {
+    margin-top: 70px;
+    text-align: left;
+}
+
+#gallery a {
+    background: #ff530a;
+    color: #fff;
+    margin-top: 30px;
+    padding: 28px 85px;
 }
 
 
@@ -376,6 +408,7 @@ a {
 
 @media screen and (min-width: 768px) {
 
+
     .titoli {
         font-size: 36px;
     }
@@ -389,29 +422,35 @@ a {
         display: none;
     }
 
-    nav,
+    nav {
+        background: rgba(255, 255, 255, 0.89);
+        width: 720px;
+    }
+
     #footer,
-    main section {
+    main section .container {
         width: 750px;
     }
 
     #navbar nav {
         align-items: center;
-        padding-right: 0;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     #navbar nav ul {
         height: 60px;
         display: flex;
+        justify-content: space-evenly;
         overflow: visible;
-        flex-basis: 71%;
+        flex-basis: 70%;
         margin-top: 0;
     }
 
     #navbar nav ul li {
         text-align: center;
         padding-left: 0;
-        margin: 0 18px 0px 19px;
+        margin: 0 15px 0px 15px;
     }
 
     #navbar nav ul li a {
@@ -422,10 +461,69 @@ a {
     }
 
     /* MAIN */
-    #contatti {
-        text-align: center;
+    /* SECTION GALLERY */
+    #gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #gallery .container .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #gallery .container .content .content_body {
+        padding: 40px 0;
+        position: relative;
+    }
+
+    #gallery .container .content .content_img,
+    #gallery .container .content .content_body {
+        flex-basis: 50%;
+    }
+
+    #gallery .container .content .left::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: -15px;
+        top: 25%;
+        width: 30px;
+        height: 30px;
+        background: #ffffff;
+        transform: rotate(45deg);
+    }
+
+    #gallery .container .content .right::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0px;
+        top: 30%;
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+        background: #ffffff;
+        transform: rotate(45deg);
+        margin-left: -15px;
+    }
+
+    .container {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .container-btn {
+        margin-top: 45px;
+        text-align: center;
+    }
+
+
+
+    /* SECTION CONTATTI */
+    #contatti {
+        text-align: center;
     }
 
     #contatti h3 {
@@ -454,7 +552,7 @@ a {
     /* Header */
 
     nav {
-        width: 970px;
+        width: 940px;
         margin-top: -90px;
         padding: 30px 20px 40px 30px;
     }
@@ -464,7 +562,7 @@ a {
     }
 
     /* MAIN */
-    main section {
+    main section .container {
         width: 970px;
     }
 
@@ -500,7 +598,7 @@ a {
 
     nav,
     #footer,
-    main section {
+    main section .container {
         width: 1170px;
     }
 
