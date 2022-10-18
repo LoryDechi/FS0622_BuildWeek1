@@ -571,6 +571,22 @@ a {
     }
 
 
+    /* GALLERY */
+    #gallery .container .content{
+        overflow: hidden;
+        width: 50%;
+        float: left;
+    }
+    #gallery .container .content .content_body{
+        padding: 40px 35px 23px;
+        font-size: 16px;
+        line-height: 26px;
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+
     #footer {
         flex-direction: row;
         justify-content: center;
