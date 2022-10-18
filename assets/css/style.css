@@ -518,7 +518,10 @@ a {
         margin-top: 45px;
         text-align: center;
     }
-
+    #gallery a{
+        padding: 28px 102.5px;
+        font-size: 16px;
+    }
 
 
     /* SECTION CONTATTI */
@@ -578,12 +581,28 @@ a {
         float: left;
     }
     #gallery .container .content .content_body{
-        padding: 40px 35px 23px;
+        padding: 40px 35px 17px;
         font-size: 16px;
         line-height: 26px;
         float: right;
         width: 50%;
         height: 100%;
+    }
+    .content{
+        margin-bottom: -1px;
+    }
+    .content .content_img img{
+        width: auto;
+    }
+    #gallery .container .content .left::before{
+        top:45%;
+    }
+    #gallery .container .content .right::after {
+        top: 50%;
+    }
+    .container-btn {
+        margin-top: 18.5px;
+        float: right;
     }
 
 
@@ -611,8 +630,12 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-
-    nav,
+    nav{
+        width: 1140px;
+    }
+    #gallery a{
+        padding: 28px 103.5px;
+    }
     #footer,
     main section .container {
         width: 1170px;
