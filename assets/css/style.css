@@ -60,7 +60,14 @@ a:active {
     color: #FF4F02;
 }
 
-.titoli:before {
+.titoli{
+    padding: 40px 0;
+    color: #2e2e2e;
+    font-size: 22px;
+    position: relative;
+}
+
+.titoli::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -93,7 +100,7 @@ a:active {
     display: block;
 }
 
-#header::before {
+.overlay::before {
     content: '';
     position: absolute;
     top: 0;
@@ -169,7 +176,60 @@ main section {
     width: 95%;
     margin: 0 auto;
 }
+/* SECTION GALLERY */
+#gallery{
+    background-image: url('../images/blog/blog-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 75px 15px 100px 15px;
+    position: relative;
+    text-align: center;
+}
 
+#gallery .titoli{
+    color: white;
+    padding-bottom: 50px;
+}
+
+.container{
+    padding-top: 40px;
+    position: relative;
+}
+
+.content{
+    height: 100%;
+    background-color: white;
+}
+.content .content_img img{
+    width: 100%;
+}
+.content .content_body{
+    padding: 20px 35px;
+}
+.content .content_body h3{
+    padding: 0 40px 20px;
+    line-height: 26px;
+    position: relative;
+    color: #323232;
+}
+.content .content_body h3::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 90px;
+    height: 1px;
+    background: #CBC4B5;
+    margin-left: -45px;
+}
+
+.content .content_body p{
+    padding-top: 25px;
+}
+
+
+/* SECTION CONTATTI */
 #contatti {
     padding: 100px 0;
 }
