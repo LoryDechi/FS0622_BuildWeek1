@@ -152,10 +152,10 @@ a {
 }
 
 /*CAROSELLO SLIDE--------------------------------------------------------------------*/
-main {
+/*main {
     padding-right: 15px;
     padding-left: 15px;
-}
+}*/
 
 #titoloSlide {
     position: relative;
@@ -175,7 +175,7 @@ main {
 }
 
 .slide {
-    padding: 50px 0px;
+    padding: 50px 15px;
 }
 
 #galleria {
@@ -328,10 +328,7 @@ hr {
 }
 
 .chef p {
-    padding-top: 40px;
-    margin-left: -5px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 40px 30px 0px 30px;
     color: #959595;
     font-size: 16px;
     line-height: 26px;
@@ -345,6 +342,10 @@ hr {
 
     .chef .orange {
         font-size: 36px;
+    }
+
+    .chef p {
+        padding: 40px 40px;
     }
 }
 
@@ -364,7 +365,7 @@ hr {
 /* SECTION MENU E PREZZI-------------------------------------------------------------------- */
 
 .prezzi {
-    padding: 70px 0px;
+    padding: 70px 15px;
 }
 
 .prezzi div>h2 {
@@ -392,15 +393,16 @@ hr {
 }
 
 .prezzi h3 {
-    padding: 30px 0px;
+    padding: 30px 15px;
 }
 
 .prezzi li {
-    padding: 21px 0px;
+    padding: 21px 15px;
 }
 
 .prezzi li h2 {
     color: #333333;
+
 }
 
 .prezzi li p {
@@ -414,11 +416,13 @@ hr {
     padding: 10px 0px 0px;
 }
 
+
+
 @media screen and (min-width:768px) {
 
     /* MQ PREZZI MENU */
     .prezzi {
-        padding: 70px 10px;
+        padding: 70px 15px;
     }
 
     .prezzi div>h2 {
@@ -427,32 +431,55 @@ hr {
 
     .prezzi h2 .orange {
         font-size: 45px;
-
     }
 
     .prezzi div:first-of-type p {
-        padding: 30px 0px 0px;
+        padding: 30px 25px 0px;
     }
-
-
-    .prezzi li {
-        display: flex;
+    
+   .prezzi li {
+       display: flex;
         flex-wrap: wrap;
+       /* position: relative;*/
     }
-    .prezzi li p {
+
+    .prezzi li h2 {
+        display:inline-block;
+       /* position: relative;
+        z-index: 99;
+        background-color: #ffffff;*/
+    }
+
+   /* .prezzi li span {
+        float: right;
+        color: #938463;
+    }*/
+
+   .prezzi li p {
         flex-basis: 100%;
     }
+    
     .prezzi li span{
         flex-grow: 1;
         text-align: end;
-        border-bottom: 1px dotted #C9C9C9;
+        border-bottom: 2px dotted #C9C9C9 ;
+    
     }
+
+    /*.dotted {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 1px;
+        border: 1px dotted #C9C9C9;
+        margin-top: 20px;
+    }*/
 
 }
 
 
 
-/* IMPLREMENTARE BOTTONE ---------------- */
+/* IMPLEMENTARE BOTTONE ---------------- */
 
 
 
@@ -462,32 +489,109 @@ hr {
 
 
 
+/* SECITON SUBSCRIBE --------------------*/
+/*ELIMANA OVERLAY PERCHè EREDITA*/
+
+.overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../images/overlay-pattern.png) #000000;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+
+#subscribe {
+    background-image: url(../images/subscribe-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 100px 0px;
+
+}
+
+#subscribe h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 40px 0px;
+}
+
+#subscribe span {
+    font-size: 25px;
+}
+
+.contSub {
+    position: relative;
+    padding: 40px 15px 0px;
+
+}
+/*INSERIRE CLASSE HR*/
+
+#subscribe p {
+    text-align: center;
+    color: #ffffff;
+    padding: 25px 0px; 
+    font-size: 18px;
+
+}
+
+.formSub {
+    display: block;
+}
+ 
+.input {
+    width: 100%;
+    height: 65px;
+    padding: 6px 12px;
+    margin-bottom: 20px;
+}
+
+::-webkit-input-placeholder { color: rgb(133, 133, 133);}
+::-moz-input-placeholder { color: rgb(133, 133, 133);}
+::-ms-input-placeholder { color: rgb(133, 133, 133) ;}
+
+.formSub button {
+    width: 212px;
+    height: 65px;
+    border: none;
+    border-radius: 0px;
+    background: #7EC3BB;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width:768px) {
+    /*MQ FORM*/
+    .formSub div {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .formSub input {
+        width: 450px;
+    }
+
+    #subscribe h2 {
+        font-size: 36px;
+    }
+
+    #subscribe .orange {
+        font-size: 45px;
+    }
+}
+/* CONTACT US --------------------/*
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*FOOTER ------------------------*/
 #footer {
     padding: 70px 20px;
     display: flex;
