@@ -40,9 +40,6 @@ p {
 }
 
 /*------------------------ NAV---------------------------------- */
-ul {
-    list-style: none;
-}
 
 a,
 a:active,
@@ -135,12 +132,13 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: -85px;
+    margin-top: -60px;
     padding: 15px 20px;
     background: linear-gradient(to left, rgba(255, 255, 255, 0.6), #ffffff);
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
+
 
 /* menu dropdown */
 #menuBottone {
@@ -148,12 +146,23 @@ nav {
 }
 
 nav ul {
-    transition: all 0.5s;
+    left: 14px;
+    top: 36px;
+    position: absolute;
     overflow: hidden;
     height: 0;
+    width: 95%;
     flex-basis: 100%;
-    margin-top: 40px;
+    margin-top: 25px;
+    animation: fadeOut 1s;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.6), #ffffff);
 }
+
+input[type='checkbox']:checked+ul {
+    height: 260px;
+    animation: fadeIn 1s;
+}
+
 
 nav ul li {
     padding-left: 10px;
@@ -178,10 +187,6 @@ nav ul li a:visited {
     color: #2E2E2E;
 }
 
-input[type='checkbox']:checked+ul {
-    height: 250px;
-}
-
 
 /* MAIN DA MODIFICARE CON NUOVE MISURE*/
 main section .container {
@@ -194,6 +199,7 @@ main section .container {
 
 #slider {
     padding: 50px 0px;
+    z-index: -10;
 }
 
 .slide {
@@ -288,13 +294,6 @@ main section .container {
     padding: 40px 0;
     color: #2e2e2e;
     font-size: 22px;
-}
-
-hr {
-    width: 25%;
-    border: 0.5px solid #C8C1B3;
-    text-align: center;
-    margin: 0 auto;
 }
 
 .chef .orange {
@@ -401,12 +400,6 @@ hr {
     margin: 0 auto;
 }
 
-.prezzi div>h2 {
-    margin: 0;
-    text-align: center;
-    font-size: 24px;
-}
-
 .prezzi h2 .orange {
     font-size: 28px;
     font-weight: 600;
@@ -418,15 +411,14 @@ hr {
     font-size: 16px;
 }
 
-.heading {
-    text-align: center;
-}
 
-.heading p {
+.titoli+p {
     padding: 40px 0px 0px;
 }
 
-
+.prezzi .container .heading {
+    text-align: center;
+}
 
 
 .prezzi-content {
@@ -438,11 +430,12 @@ hr {
 }
 
 .prezzi li {
-    padding: 21px 15px;
+    padding: 21px 0px;
 }
 
 .prezzi li h2 {
     color: #333333;
+    margin-bottom: 10px;
 }
 
 .prezzi li p {
@@ -474,31 +467,8 @@ hr {
     color: #ffffff;
 }
 
-/* ---------------------IMPLEMENTARE BOTTONE ---------------- */
-
-
-
-
-
-
-
-
 
 /* -------------------------SECITON SUBSCRIBE --------------------*/
-/*ELIMANA OVERLAY PERCHè EREDITA*/
-
-.overlay::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url(../images/overlay-pattern.png) #000000;
-    height: 100%;
-    width: 100%;
-    opacity: 0.3;
-}
 
 #subscribe {
     background-image: url(../images/subscribe-bg.jpg);
@@ -526,8 +496,6 @@ hr {
     padding: 40px 15px 0px;
 
 }
-
-/*INSERIRE CLASSE HR*/
 
 #subscribe p {
     text-align: center;
@@ -696,12 +664,6 @@ textarea {
 
 /* -------------------------------------FOOTER -------------------------*/
 
-ul,
-a {
-    text-decoration: none;
-    list-style: none;
-    color: #555;
-}
 
 #footer {
     padding: 100px 20px;
@@ -725,6 +687,10 @@ a {
     margin-bottom: 25px;
 }
 
+#footer ul li a:hover {
+    background-color: #FF4F02;
+}
+
 #footer #info,
 #blog,
 #photo_social {
@@ -735,8 +701,7 @@ a {
 
 /*--------------------------------------------------------------------------------INIZIO MEDIA QUERY------------------------------------------------------------------------------------- */
 
-
-/*------------------------------------------------------ MEDIA QUERY  768px   -----------------------*/
+/*--------------------------------- MEDIA QUERY  768px -----------------------*/
 @media screen and (min-width: 768px) {
 
     .titoli {
@@ -748,10 +713,21 @@ a {
     }
 
     /*----------------------------- NAV ----------------------------*/
+
+    nav ul {
+        position: unset;
+        overflow: hidden;
+        height: 0;
+        flex-basis: 100%;
+        margin-top: 25px;
+        animation: unset;
+    }
+
     #navbar nav {
         align-items: center;
         margin-right: auto;
         margin-left: auto;
+        padding: 15px 20px;
     }
 
     #navbar nav ul {
@@ -905,12 +881,6 @@ a {
 
     /* ---------------------------MQ PREZZI MENU -----------------*/
 
-    .container-prova {
-        width: 750px;
-        padding: 0 15px;
-        margin: 0 auto;
-    }
-
     .prezzi {
         padding: 70px 0;
         text-align: left;
@@ -932,7 +902,7 @@ a {
     .prezzi li h2 {
         display: inline-block;
         position: relative;
-        z-index: 10;
+        z-index: 5;
         background-color: #ffffff;
     }
 
@@ -1091,13 +1061,8 @@ a {
     #footer {
         flex-direction: row;
         justify-content: center;
-        align-items: center;
         padding: 70px 30px;
         width: 970px;
-    }
-
-    #footer div {
-        margin-right: 50px;
     }
 
     .contact_info {
@@ -1140,4 +1105,24 @@ a {
     }
 
 
+}
+
+@keyframes fadeIn {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 260px;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        height: 260px;
+    }
+
+    100% {
+        height: 0px;
+    }
 }
