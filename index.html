@@ -9,6 +9,11 @@
     <title>Resturant One Page Layout</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/f8133be29a.js" crossorigin="anonymous"></script>
+    <!--google icon-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -44,37 +49,63 @@
             </ul>
         </nav>
     </div>
-
     <!--BISOGNA INSERIRE BACKGROUND IMAGE DEL POMODORO CHE RESTA FERMA-->
     <main>
         <!--SLIDER CON IMMAGINI-->
-        <section>
-            <div>
-                <h3>FEATURED <span class="orange">WORKS</span></h3>
-                <!--AGGIUNGERE FRECCIA-->
-                <img src="assets/images/slider/slider-img-1.jpg" alt="Brownies" />
-                <img src="assets/images/slider/slider-img-2.jpg" alt="Tortellini" />
-                <img src="assets/images/slider/slider-img-3.jpg" alt="Uovo" />
-                <img src="assets/images/slider/slider-img-4.jpg" alt="Crepes" />
-                <!--AGGIUNGERE PALLINI-->
+        <section class="slide">
+            <h3 id="titoloSlide">FEATURED <span class="orange">WORKS</span><span
+                    class="material-symbols-outlined">arrow_forward_ios</span></h3>
+            <!--AGGIUNGERE FRECCIA-->
+            <div id="galleria">
+                <div class="immagine">
+                    <img class="preview" src="assets/images/slider/slider-img-1.jpg" alt="Brownies" />
+                </div>
+                <div class="immagine">
+                    <img class="preview" src="assets/images/slider/slider-img-2.jpg" alt="Tortellini" />
+                </div>
+                <div class="immagine">
+                    <img class="preview" src="assets/images/slider/slider-img-3.jpg" alt="Uovo" />
+                </div>
+                <div class="immagine">
+                    <img class="preview" src="assets/images/slider/slider-img-4.jpg" alt="Crepes" />
+                </div>
+                <!--<div class="immagine">
+                        <img class="preview" src="assets/images/slider/slider-img-1.jpg" alt="Brownies" />
+                    </div>
+                    <div class="immagine">
+                        <img class="preview" src="assets/images/slider/slider-img-2.jpg" alt="Tortellini" />
+                    </div>
+                    <div class="immagine">
+                        <img class="preview" src="assets/images/slider/slider-img-3.jpg" alt="Uovo" />
+                    </div>
+                    <div class="immagine">
+                        <img class="preview" src="assets/images/slider/slider-img-4.jpg" alt="Crepes" />
+                    </div>-->
             </div>
+            <!--AGGIUNGERE PALLINI-->
+            <p id="pallini"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i
+                    class="fas fa-circle"></i></p>
+
         </section>
         <!--SEZIONE CHEF-->
-        <section>
+        <section class="chef">
             <div>
-                <img src="assets/images/cooker-img.png" alt="Cuoco" />
+                <img class="cuoco" src="assets/images/cooker-img.png" alt="Cuoco" />
                 <h2>
-                    Your <span class="orange">restaurant's</span> Website Has To Look
+                    Your <span class="orange">Restaurant's
+                        <br>
+                    </span> Website Has To Look
                     <span class="orange">Good</span>
                 </h2>
-                <hr />
+                <hr/>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim
+                    <br>
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in
+                    <br>
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 </p>
             </div>
         </section>
@@ -176,7 +207,8 @@
 
             <!--ANCORARE A NAV-->
         </section>
-        <section>
+        <!-- MENU E PREZZI--------------------------------------------------------- -->
+        <section class="prezzi">
             <div>
                 <h2>
                     our <span class="orange">MENU</span> the
@@ -191,7 +223,9 @@
                 <h3>FEATURED <span class="orange"> ON THE WEEK </span></h3>
                 <ul>
                     <li>
-                        <h2>Pancakes n' Such</h2><span>&dollar; 25.00</span>
+                        <h2>Pancakes n' Such</h2>
+                         <div class="dotted"></div>
+                        <span>&dollar; 25.00</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
                     </li>
@@ -255,7 +289,7 @@
                 <button type="submit">SEND YOUR MESSAGE</button>
             </div>
         </section>
-
+        
     </main>
 
     <footer id="footer">
@@ -353,10 +387,6 @@
                     <span class="orange">Themefisher</span> </a></p>
         </div>
     </footer>
-
-
-    <!-- fontawsome -->
-    <script src="https://kit.fontawesome.com/f8133be29a.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
