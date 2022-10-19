@@ -1,3 +1,4 @@
+/* mini reset */
 * {
     padding: 0;
     margin: 0;
@@ -97,6 +98,10 @@ nav {
 /*----------------------------------------------------------------------------------------------------------*/
 
 
+
+
+
+
 /* menu dropdown */
 #menuBottone {
     display: none;
@@ -152,10 +157,10 @@ a {
 }
 
 /*CAROSELLO SLIDE--------------------------------------------------------------------*/
-/*main {
-    padding-right: 15px;
-    padding-left: 15px;
-}*/
+
+
+
+
 
 #titoloSlide {
     position: relative;
@@ -217,87 +222,6 @@ a {
     color: #ff530a;
 }
 
-@media screen and (min-width: 768px) {
-
-    /* MQ CAROSELLO SLIDE */
-    #titoloSlide {
-        padding-left: 38px;
-    }
-
-    .material-symbols-outlined {
-        padding-right: 20px;
-    }
-
-    #galleria div:nth-of-type(3) {
-        display: inline-block;
-    }
-
-    #galleria {
-        padding-left: 33px;
-        padding-right: 33px;
-    }
-
-    .immagine {
-        display: inline-block;
-        width: 213px;
-        margin: 4px;
-    }
-
-    .preview {
-        width: 100%;
-    }
-
-    #pallini i:last-of-type {
-        display: none;
-    }
-
-    /* VEDERE FRECCIA*/
-}
-
-@media screen and (min-width: 992px) {
-
-    /* MQ CAROSELLO SLIDE */
-    #titoloSlide {
-        padding-left: 48px;
-    }
-
-    #galleria div:last-of-type {
-        display: inline-block;
-    }
-
-    #galleria {
-        padding-left: 38px;
-        padding-right: 38px;
-    }
-
-    .immagine {
-        width: 208px;
-        padding-right: 30px;
-        margin: 4px 0;
-    }
-
-    #pallini i:nth-of-type(3) {
-        display: none;
-    }
-
-    /* VEDERE FRECCIA*/
-}
-
-@media screen and (min-width: 1200px) {
-
-    /* MQ CAROSELLO SLIDE */
-    #titoloSlide {
-        padding-left: 56px;
-    }
-
-    .immagine {
-        width: 265px;
-        padding-right: 30px;
-        margin: 4px 0;
-    }
-
-    /* VEDERE FRECCIA*/
-}
 
 /*SECTION CHEF--------------------------------------------------------------------*/
 .chef {
@@ -335,30 +259,18 @@ hr {
 
 }
 
-@media screen and (min-width: 768px) {
-    .chef h2 {
-        font-size: 36px;
-    }
-
-    .chef .orange {
-        font-size: 36px;
-    }
-
-    .chef p {
-        padding: 40px 40px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .chef .orange {
-        font-size: 45px;
-    }
-}
-
-/*media 1200 uguale*/
-
-
 /*---------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -416,69 +328,6 @@ hr {
     padding: 10px 0px 0px;
 }
 
-
-
-@media screen and (min-width:768px) {
-
-    /* MQ PREZZI MENU */
-    .prezzi {
-        padding: 70px 15px;
-    }
-
-    .prezzi div>h2 {
-        font-size: 36px;
-    }
-
-    .prezzi h2 .orange {
-        font-size: 45px;
-    }
-
-    .prezzi div:first-of-type p {
-        padding: 30px 25px 0px;
-    }
-    
-   .prezzi li {
-       display: flex;
-        flex-wrap: wrap;
-       /* position: relative;*/
-    }
-
-    .prezzi li h2 {
-        display:inline-block;
-       /* position: relative;
-        z-index: 99;
-        background-color: #ffffff;*/
-    }
-
-   /* .prezzi li span {
-        float: right;
-        color: #938463;
-    }*/
-
-   .prezzi li p {
-        flex-basis: 100%;
-    }
-    
-    .prezzi li span{
-        flex-grow: 1;
-        text-align: end;
-        border-bottom: 2px dotted #C9C9C9 ;
-    
-    }
-
-    /*.dotted {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 1px;
-        border: 1px dotted #C9C9C9;
-        margin-top: 20px;
-    }*/
-
-}
-
-
-
 /* IMPLEMENTARE BOTTONE ---------------- */
 
 
@@ -531,12 +380,13 @@ hr {
     padding: 40px 15px 0px;
 
 }
+
 /*INSERIRE CLASSE HR*/
 
 #subscribe p {
     text-align: center;
     color: #ffffff;
-    padding: 25px 0px; 
+    padding: 25px 0px;
     font-size: 18px;
 
 }
@@ -544,7 +394,7 @@ hr {
 .formSub {
     display: block;
 }
- 
+
 .input {
     width: 100%;
     height: 65px;
@@ -552,9 +402,17 @@ hr {
     margin-bottom: 20px;
 }
 
-::-webkit-input-placeholder { color: rgb(133, 133, 133);}
-::-moz-input-placeholder { color: rgb(133, 133, 133);}
-::-ms-input-placeholder { color: rgb(133, 133, 133) ;}
+::-webkit-input-placeholder {
+    color: rgb(133, 133, 133);
+}
+
+::-moz-input-placeholder {
+    color: rgb(133, 133, 133);
+}
+
+::-ms-input-placeholder {
+    color: rgb(133, 133, 133);
+}
 
 .formSub button {
     width: 212px;
@@ -569,26 +427,28 @@ hr {
     text-transform: uppercase;
 }
 
-@media screen and (min-width:768px) {
-    /*MQ FORM*/
-    .formSub div {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .formSub input {
-        width: 450px;
-    }
-
-    #subscribe h2 {
-        font-size: 36px;
-    }
-
-    #subscribe .orange {
-        font-size: 45px;
-    }
-}
 /* CONTACT US --------------------/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*FOOTER ------------------------*/
@@ -676,7 +536,142 @@ hr {
     width: 100%;
 }
 
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------ MEDIA QUERY  768px   -----------------------*/
 @media screen and (min-width: 768px) {
+
+    /* MQ CAROSELLO SLIDE */
+    #titoloSlide {
+        padding-left: 38px;
+    }
+
+    .material-symbols-outlined {
+        padding-right: 20px;
+    }
+
+    #galleria div:nth-of-type(3) {
+        display: inline-block;
+    }
+
+    #galleria {
+        padding-left: 33px;
+        padding-right: 33px;
+    }
+
+    .immagine {
+        display: inline-block;
+        width: 213px;
+        margin: 4px;
+    }
+
+    .preview {
+        width: 100%;
+    }
+
+    #pallini i:last-of-type {
+        display: none;
+    }
+
+    /* SECTION CHEF */
+    .chef h2 {
+        font-size: 36px;
+    }
+
+    .chef .orange {
+        font-size: 36px;
+    }
+
+    .chef p {
+        padding: 40px 40px;
+    }
+
+    /* MQ PREZZI MENU */
+    .prezzi {
+        padding: 70px 15px;
+    }
+
+    .prezzi div>h2 {
+        font-size: 36px;
+    }
+
+    .prezzi h2 .orange {
+        font-size: 45px;
+    }
+
+    .prezzi div:first-of-type p {
+        padding: 30px 25px 0px;
+    }
+
+    .prezzi li {
+        display: flex;
+        flex-wrap: wrap;
+        /* position: relative;*/
+    }
+
+    .prezzi li h2 {
+        display: inline-block;
+        /* position: relative;
+    z-index: 99;
+    background-color: #ffffff;*/
+    }
+
+    /* .prezzi li span {
+    float: right;
+    color: #938463;
+}*/
+
+    .prezzi li p {
+        flex-basis: 100%;
+    }
+
+    .prezzi li span {
+        flex-grow: 1;
+        text-align: end;
+        border-bottom: 2px dotted #C9C9C9;
+
+    }
+
+    /*.dotted {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    border: 1px dotted #C9C9C9;
+    margin-top: 20px;
+}*/
+
+
+
+    /*MQ FORM*/
+    .formSub div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .formSub input {
+        width: 450px;
+    }
+
+    #subscribe h2 {
+        font-size: 36px;
+    }
+
+    #subscribe .orange {
+        font-size: 45px;
+    }
+
+
+
+    /* FOOTER */
     #footer {
         padding: 70px 100px;
     }
@@ -692,7 +687,39 @@ hr {
     }
 }
 
+/*--------------------------------------------------------------MEDIA QUERY 992px ---------------------------------------------*/
 @media screen and (min-width: 992px) {
+
+    /* MQ CAROSELLO SLIDE */
+    #titoloSlide {
+        padding-left: 48px;
+    }
+
+    #galleria div:last-of-type {
+        display: inline-block;
+    }
+
+    #galleria {
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+
+    .immagine {
+        width: 208px;
+        padding-right: 30px;
+        margin: 4px 0;
+    }
+
+    #pallini i:nth-of-type(3) {
+        display: none;
+    }
+
+    /* SECTION CHEF */
+    .chef .orange {
+        font-size: 45px;
+    }
+
+    /* FOOTER */
     #footer {
         flex-direction: row;
         justify-content: center;
@@ -710,5 +737,20 @@ hr {
 
     .flex_photo {
         flex-wrap: wrap;
+    }
+}
+
+/*-----------------------------------------------------------------MEDIA QUERY 1200PX --------------------------------------*/
+@media screen and (min-width: 1200px) {
+
+    /* MQ CAROSELLO SLIDE */
+    #titoloSlide {
+        padding-left: 56px;
+    }
+
+    .immagine {
+        width: 265px;
+        padding-right: 30px;
+        margin: 4px 0;
     }
 }
