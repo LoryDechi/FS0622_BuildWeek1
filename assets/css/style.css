@@ -738,6 +738,7 @@ textarea {
         overflow: visible;
         flex-basis: 70%;
         margin-top: 0;
+        background: transparent;
     }
 
     #navbar nav ul li {
@@ -985,6 +986,7 @@ textarea {
 
     #navbar nav ul {
         flex-basis: 60%;
+        background: transparent;
     }
 
     /*------------------------------- MAIN -----------------------------*/
