@@ -39,6 +39,7 @@ p {
     font-family: myfont;
 }
 
+/*------------------------ NAV---------------------------------- */
 ul {
     list-style: none;
 }
@@ -173,201 +174,15 @@ input[type='checkbox']:checked+ul {
     height: 250px;
 }
 
-/*AGGIUNTA GRUPPO A----------------------------------*/
 
-/* MAIN */
+/* MAIN DA MODIFICARE CON NUOVE MISURE*/
 main section .container {
     width: 95%;
     margin: 0 auto;
 }
 
-/* SECTION GALLERY */
-#gallery {
-    background-image: url('../images/blog/blog-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 75px 0px 100px 0px;
-    position: relative;
-    text-align: center;
-}
-
-#gallery .titoli {
-    color: white;
-}
-
-.container {
-    padding-top: 40px;
-    position: relative;
-}
-
-.container-title {
-    padding-bottom: 40px;
-}
-
-.content {
-    height: 100%;
-    background-color: white;
-}
-
-.content .content_img img {
-    width: 100%;
-    margin: -5px;
-}
-
-.content .content_img {
-    overflow: hidden;
-}
-
-.content .content_img img:hover {
-    transform: scale(1.2) rotate(10deg);
-    transition: all 0.8s ease-out;
-}
-
-.content .content_body {
-    padding: 20px 35px;
-}
-
-.content .content_body h3 {
-    padding: 0 40px 20px;
-    line-height: 26px;
-    position: relative;
-    color: #323232;
-}
-
-.content .content_body h3::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 90px;
-    height: 1px;
-    background: #CBC4B5;
-    margin-left: -45px;
-}
-
-.content .content_body p {
-    padding-top: 25px;
-    color: #959595
-}
-
-.container-btn {
-    margin-top: 70px;
-    text-align: left;
-}
-
-#gallery a {
-    background: #ff530a;
-    color: #fff;
-    margin-top: 30px;
-    padding: 28px 85px;
-}
-
-
-/* SECTION CONTATTI */
-#contatti {
-    padding: 100px 0;
-}
-
-#contatti h2 {
-    position: relative;
-    text-align: center;
-    padding: 40px 0;
-}
-
-#contatti h3 {
-    padding: 20px 0;
-}
-
-#contatti form {
-    margin-bottom: 20px;
-}
-
-#contatti form input {
-    height: 48px;
-}
-
-#contatti form textarea {
-    height: 140px;
-}
-
-#contatti form .form-rules {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-}
-
-#contatti form .form-rules:focus {
-    outline: 1px solid #7EC3BB;
-}
-
-#contatti button {
-    width: 100%;
-    background-color: #FF4F02;
-    border: none;
-    color: white;
-    padding: 20px 80px;
-    font-weight: 600;
-}
-
-input[type='text'] ,[type='email'] , textarea { 
-    font-size: 24px;
-    font-family: myfont;
- }
-
-/* FOOTER */
-
-ul,
-a {
-    text-decoration: none;
-    list-style: none;
-    color: #555;
-}
-
-#footer {
-    padding: 100px 20px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-}
-
-#footer h3 {
-    padding-bottom: 40px;
-    color: #2e2e2e;
-}
-
-#footer h4 {
-    font-size: 18px;
-    font-weight: 500;
-    padding-bottom: 10px;
-}
-
-#footer ul li {
-    margin-bottom: 25px;
-}
-
-#footer #info,
-#blog,
-#photo_social {
-    padding-bottom: 20px;
-}
-
-.orange {
-    color: #ff530a;
-
-}
-
-ul,
-a {
-    text-decoration: none;
-    list-style: none;
-    color: #555;
-}
 
 /*CAROSELLO SLIDE--------------------------------------------------------------------*/
-
 
 
 
@@ -469,22 +284,91 @@ hr {
 
 }
 
-/*---------------------------------------------------------------------------------------------------------*/
+/*--------------------------------SECTION scacchiera------------------------------------------------------------------*/
+
+#gallery {
+    background-image: url('../images/blog/blog-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 75px 0px 100px 0px;
+    position: relative;
+    text-align: center;
+}
+
+#gallery .titoli {
+    color: white;
+}
+
+.container {
+    padding-top: 40px;
+    position: relative;
+}
+
+.container-title {
+    padding-bottom: 40px;
+}
+
+.content {
+    height: 100%;
+    background-color: white;
+}
+
+.content .content_img img {
+    width: 100%;
+    margin: -5px;
+}
+
+.content .content_img {
+    overflow: hidden;
+}
+
+.content .content_img img:hover {
+    transform: scale(1.2) rotate(10deg);
+    transition: all 0.8s ease-out;
+}
+
+.content .content_body {
+    padding: 20px 35px;
+}
+
+.content .content_body h3 {
+    padding: 0 40px 20px;
+    line-height: 26px;
+    position: relative;
+    color: #323232;
+}
+
+.content .content_body h3::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 90px;
+    height: 1px;
+    background: #CBC4B5;
+    margin-left: -45px;
+}
+
+.content .content_body p {
+    padding-top: 25px;
+    color: #959595
+}
+
+.container-btn {
+    margin-top: 70px;
+    text-align: left;
+}
+
+#gallery a {
+    background: #ff530a;
+    color: #fff;
+    margin-top: 30px;
+    padding: 28px 85px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* SECTION MENU E PREZZI-------------------------------------------------------------------- */
+/* ---------------------------SECTION MENU E PREZZI---------------- */
 
 .prezzi {
     padding: 70px 15px;
@@ -538,7 +422,7 @@ hr {
     padding: 10px 0px 0px;
 }
 
-/* IMPLEMENTARE BOTTONE ---------------- */
+/* ---------------------IMPLEMENTARE BOTTONE ---------------- */
 
 
 
@@ -548,7 +432,7 @@ hr {
 
 
 
-/* SECITON SUBSCRIBE --------------------*/
+/* -------------------------SECITON SUBSCRIBE --------------------*/
 /*ELIMANA OVERLAY PERCHè EREDITA*/
 
 .overlay::before {
@@ -637,16 +521,65 @@ hr {
     text-transform: uppercase;
 }
 
-/* CONTACT US --------------------/*
 
 
+/* --------------------------------------------SECTION CONTATTI ----------------------------------*/
+#contatti {
+    padding: 100px 0;
+}
+
+#contatti h2 {
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#contatti h3 {
+    padding: 20px 0;
+}
+
+#contatti form {
+    margin-bottom: 20px;
+}
+
+#contatti form input {
+    height: 48px;
+}
+
+#contatti form textarea {
+    height: 140px;
+}
+
+#contatti form .form-rules {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#contatti form .form-rules:focus {
+    outline: 1px solid #7EC3BB;
+}
+
+#contatti button {
+    width: 100%;
+    background-color: #FF4F02;
+    border: none;
+    color: white;
+    padding: 20px 80px;
+    font-weight: 600;
+}
+
+input[type='text'],
+[type='email'],
+textarea {
+    font-size: 24px;
+    font-family: myfont;
+}
 
 
-
-
-
-
-/*FOOTER ------------------------*/
+/*-------------------------------FOOTER ------------------------*/
 
 #footer i {
     color: #555;
@@ -709,9 +642,60 @@ hr {
     width: 100%;
 }
 
+/* -------------------------------------FOOTER -------------------------*/
 
+ul,
+a {
+    text-decoration: none;
+    list-style: none;
+    color: #555;
+}
+
+#footer {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#footer h3 {
+    padding-bottom: 40px;
+    color: #2e2e2e;
+}
+
+#footer h4 {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+#footer ul li {
+    margin-bottom: 25px;
+}
+
+#footer #info,
+#blog,
+#photo_social {
+    padding-bottom: 20px;
+}
+
+.orange {
+    color: #ff530a;
+
+}
+
+ul,
+a {
+    text-decoration: none;
+    list-style: none;
+    color: #555;
+}
+
+/*--------------------------------------------------------------------------------INIZIO MEDIA QUERY------------------------------------------------------------------------------------- */
+
+
+/*------------------------------------------------------ MEDIA QUERY  768px   -----------------------*/
 @media screen and (min-width: 768px) {
-
 
     .titoli {
         font-size: 36px;
@@ -721,21 +705,7 @@ hr {
         font-size: 45px;
     }
 
-    /* HEADER */
-    #menu {
-        display: none;
-    }
-
-    nav {
-        background: rgba(255, 255, 255, 0.89);
-        width: 720px;
-    }
-
-    #footer,
-    main section .container {
-        width: 750px;
-    }
-
+    /*----------------------------- NAV ----------------------------*/
     #navbar nav {
         align-items: center;
         margin-right: auto;
@@ -764,8 +734,63 @@ hr {
         text-align: center;
     }
 
-    /* MAIN */
-    /* SECTION GALLERY */
+    /* -------------------------------HEADER ----------------------------*/
+    #menu {
+        display: none;
+    }
+
+    nav {
+        background: rgba(255, 255, 255, 0.89);
+        width: 720px;
+    }
+
+    /* ---------------------------MQ CAROSELLO SLIDE----------------- */
+
+    #titoloSlide {
+        padding-left: 38px;
+    }
+
+    .material-symbols-outlined {
+        padding-right: 20px;
+    }
+
+    #galleria div:nth-of-type(3) {
+        display: inline-block;
+    }
+
+    #galleria {
+        padding-left: 33px;
+        padding-right: 33px;
+    }
+
+    .immagine {
+        display: inline-block;
+        width: 213px;
+        margin: 4px;
+    }
+
+    .preview {
+        width: 100%;
+    }
+
+    #pallini i:last-of-type {
+        display: none;
+    }
+
+    /* -----------------------------SECTION CHEF------------------------- */
+    .chef h2 {
+        font-size: 36px;
+    }
+
+    .chef .orange {
+        font-size: 36px;
+    }
+
+    .chef p {
+        padding: 40px 40px;
+    }
+
+    /* -------------------------------SECTION SCACCHIERA --------------------*/
     #gallery {
         display: flex;
         flex-direction: column;
@@ -822,12 +847,13 @@ hr {
         margin-top: 45px;
         text-align: center;
     }
-    #gallery a{
+
+    #gallery a {
         padding: 28px 102.5px;
         font-size: 16px;
     }
 
-    /* SECTION CONTATTI */
+    /* -------------------------------SECTION CONTATTI --------------------------*/
     #contatti {
         text-align: center;
     }
@@ -841,58 +867,7 @@ hr {
         height: 50px;
     }
 
-    /* FOOTER */
-
-/*------------------------------------------------------ MEDIA QUERY  768px   -----------------------*/
-@media screen and (min-width: 768px) {
-
-    /* MQ CAROSELLO SLIDE */
-    
-    #titoloSlide {
-        padding-left: 38px;
-    }
-
-    .material-symbols-outlined {
-        padding-right: 20px;
-    }
-
-    #galleria div:nth-of-type(3) {
-        display: inline-block;
-    }
-
-    #galleria {
-        padding-left: 33px;
-        padding-right: 33px;
-    }
-
-    .immagine {
-        display: inline-block;
-        width: 213px;
-        margin: 4px;
-    }
-
-    .preview {
-        width: 100%;
-    }
-
-    #pallini i:last-of-type {
-        display: none;
-    }
-
-    /* SECTION CHEF */
-    .chef h2 {
-        font-size: 36px;
-    }
-
-    .chef .orange {
-        font-size: 36px;
-    }
-
-    .chef p {
-        padding: 40px 40px;
-    }
-
-    /* MQ PREZZI MENU */
+    /* ---------------------------MQ PREZZI MENU -----------------*/
     .prezzi {
         padding: 70px 15px;
     }
@@ -981,10 +956,18 @@ hr {
         margin-right: 20px;
         font-size: 15px;
     }
-}
-@media screen and (min-width: 992px) {
 
-    /* Header */
+    /* FOOTER */
+    #footer,
+    main section .container {
+        width: 750px;
+    }
+}
+
+/*--------------------------------------------------------------MEDIA QUERY 992px ---------------------------------------------*/
+@media screen and (min-width: 992px) {
+   
+    /* -------------------------------Header --------------------------*/
 
     nav {
         width: 940px;
@@ -996,7 +979,7 @@ hr {
         flex-basis: 60%;
     }
 
-    /* MAIN */
+    /*------------------------------- MAIN -----------------------------*/
     main section .container {
         width: 970px;
     }
@@ -1005,55 +988,7 @@ hr {
         float: right;
     }
 
-    /* GALLERY */
-    #gallery .container .content{
-        overflow: hidden;
-        width: 50%;
-        float: left;
-    }
-    #gallery .container .content .content_body{
-        padding: 40px 35px 17px;
-        font-size: 16px;
-        line-height: 26px;
-        float: right;
-        width: 50%;
-        height: 100%;
-    }
-    .content{
-        margin-bottom: -1px;
-    }
-    .content .content_img img{
-        width: auto;
-    }
-    #gallery .container .content .left::before{
-        top:45%;
-    }
-    #gallery .container .content .right::after {
-        top: 50%;
-    }
-    .container-btn {
-        margin-top: 18.5px;
-        float: right;
-    }
-
-
-    #footer {
-        flex-direction: row;
-        justify-content: center;
-        width: 970px;
-    }
-
-    #footer #info,
-    #blog,
-    #photo_social {
-        width: 33.3%;
-        padding: 0px 15px;
-    }
-
-/*--------------------------------------------------------------MEDIA QUERY 992px ---------------------------------------------*/
-@media screen and (min-width: 992px) {
-
-    /* MQ CAROSELLO SLIDE */
+    /* ------------------------------MQ CAROSELLO SLIDE ---------------------*/
     #titoloSlide {
         padding-left: 48px;
     }
@@ -1077,12 +1012,51 @@ hr {
         display: none;
     }
 
-    /* SECTION CHEF */
+
+    /* ---------------------------------SECTION CHEF ---------------------*/
     .chef .orange {
         font-size: 45px;
     }
 
-    /* FOOTER */
+
+    /* ----------------------------SCACCHIERA -----------------------*/
+    #gallery .container .content {
+        overflow: hidden;
+        width: 50%;
+        float: left;
+    }
+
+    #gallery .container .content .content_body {
+        padding: 40px 35px 17px;
+        font-size: 16px;
+        line-height: 26px;
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    .content {
+        margin-bottom: -1px;
+    }
+
+    .content .content_img img {
+        width: auto;
+    }
+
+    #gallery .container .content .left::before {
+        top: 45%;
+    }
+
+    #gallery .container .content .right::after {
+        top: 50%;
+    }
+
+    .container-btn {
+        margin-top: 18.5px;
+        float: right;
+    }
+
+    /* ---------------------------FOOTER ----------------------------*/
     #footer {
         flex-direction: row;
         justify-content: center;
@@ -1101,17 +1075,33 @@ hr {
     .flex_photo {
         flex-wrap: wrap;
     }
+    /* -------------------------FOOTER --------------------------*/
+    #footer {
+        flex-direction: row;
+        justify-content: center;
+        width: 970px;
+    }
+
+    #footer #info,
+    #blog,
+    #photo_social {
+        width: 33.3%;
+        padding: 0px 15px;
+    }
 }
 
 /*-----------------------------------------------------------------MEDIA QUERY 1200PX --------------------------------------*/
 @media screen and (min-width: 1200px) {
-    /* MQ nav*/
-    nav{
+
+    /*---------------------- MQ nav----------------------*/
+    nav {
         width: 1140px;
     }
-    #gallery a{
+
+    #gallery a {
         padding: 28px 103.5px;
     }
+
     #footer,
     main section .container {
         width: 1170px;
@@ -1119,9 +1109,10 @@ hr {
 
     #navbar nav ul {
         flex-basis: 50%;
-   }     
-    /* MQ CAROSELLO SLIDE */
-   
+    }
+
+    /* ---------------------MQ CAROSELLO SLIDE -------------------*/
+
     #titoloSlide {
         padding-left: 56px;
     }
@@ -1132,4 +1123,5 @@ hr {
         margin: 4px 0;
 
     }
+
 }
