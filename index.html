@@ -52,40 +52,52 @@
     <!--BISOGNA INSERIRE BACKGROUND IMAGE DEL POMODORO CHE RESTA FERMA-->
     <main>
         <!--SLIDER CON IMMAGINI-->
-        <section class="slide">
-            <h3 id="titoloSlide">FEATURED <span class="orange">WORKS</span><span
-                    class="material-symbols-outlined">arrow_forward_ios</span></h3>
-            <!--AGGIUNGERE FRECCIA-->
-            <div id="galleria">
-                <div class="immagine">
-                    <img class="preview" src="assets/images/slider/slider-img-1.jpg" alt="Brownies" />
-                </div>
-                <div class="immagine">
-                    <img class="preview" src="assets/images/slider/slider-img-2.jpg" alt="Tortellini" />
-                </div>
-                <div class="immagine">
-                    <img class="preview" src="assets/images/slider/slider-img-3.jpg" alt="Uovo" />
-                </div>
-                <div class="immagine">
-                    <img class="preview" src="assets/images/slider/slider-img-4.jpg" alt="Crepes" />
-                </div>
-                <!--<div class="immagine">
-                        <img class="preview" src="assets/images/slider/slider-img-1.jpg" alt="Brownies" />
-                    </div>
-                    <div class="immagine">
-                        <img class="preview" src="assets/images/slider/slider-img-2.jpg" alt="Tortellini" />
-                    </div>
-                    <div class="immagine">
-                        <img class="preview" src="assets/images/slider/slider-img-3.jpg" alt="Uovo" />
-                    </div>
-                    <div class="immagine">
-                        <img class="preview" src="assets/images/slider/slider-img-4.jpg" alt="Crepes" />
-                    </div>-->
-            </div>
-            <!--AGGIUNGERE PALLINI-->
-            <p id="pallini"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i
-                    class="fas fa-circle"></i></p>
+        <section id="slider">
+            <div class="container">
+                <h3>FEATURED <span class="orange">WORKS</span><span
+                        class="material-symbols-outlined">arrow_forward_ios</span></h3>
+                <div class="slide">
+                    <div class="slide_image">
+                        <input type="radio" name="slide" id="img_1">
+                        <input type="radio" name="slide" id="img_2">
+                        <input type="radio" name="slide" id="img_3">
+                        <input type="radio" name="slide" id="img_4">
 
+                        <div class="img_slide img_1">
+                            <img src="assets/images/slider/slider-img-1.jpg" alt="">
+                        </div>
+                        <div class="img_slide img_2">
+                            <img src="assets/images/slider/slider-img-2.jpg" alt="">
+                        </div>
+                        <div class="img_slide img_3">
+                            <img src="assets/images/slider/slider-img-3.jpg" alt="">
+                        </div>
+                        <div class="img_slide img_4">
+                            <img src="assets/images/slider/slider-img-4.jpg" alt="">
+                        </div>
+                        <div class="img_slide img_1">
+                            <img src="assets/images/slider/slider-img-1.jpg" alt="">
+                        </div>
+                        <div class="img_slide img_2">
+                            <img src="assets/images/slider/slider-img-2.jpg" alt="">
+                        </div>
+                        <div class="img_slide img_3">
+                            <img src="assets/images/slider/slider-img-3.jpg" alt="">
+                        </div>
+                        <div class="img_slide img_4">
+                            <img src="assets/images/slider/slider-img-4.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="label">
+                    <label for="img_1"></label>
+                    <label for="img_2"></label>
+                    <label for="img_3"></label>
+                    <label for="img_4"></label>
+                </div>
+            </div>
         </section>
         <!--SEZIONE CHEF-->
         <section class="chef">
@@ -97,7 +109,8 @@
                     </span> Website Has To Look
                     <span class="orange">Good</span>
                 </h2>
-                <!-- eliminare --><hr/>
+                <!-- eliminare -->
+                <hr />
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim
@@ -224,7 +237,7 @@
                 <ul>
                     <li>
                         <h2>Pancakes n' Such</h2>
-                         <div class="dotted"></div>
+                        <div class="dotted"></div>
                         <span>&dollar; 25.00</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
@@ -278,7 +291,7 @@
 
         </section>
 
-          <!-- CONTATTI -->
+        <!-- CONTATTI -->
         <section id="contatti">
             <div class="container">
                 <h2 class="titoli">our <span class="orange">CONTACT US</span></h2>
@@ -295,7 +308,7 @@
                 <button type="submit">SEND YOUR MESSAGE</button>
             </div>
         </section>
-        
+
     </main>
 
     <footer id="footer">
@@ -393,6 +406,8 @@
                     <span class="orange">Themefisher</span> </a></p>
         </div>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
