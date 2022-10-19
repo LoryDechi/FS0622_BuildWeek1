@@ -92,10 +92,12 @@
 
                 </div>
                 <div class="label">
-                    <label for="img_1"></label>
-                    <label for="img_2"></label>
-                    <label for="img_3"></label>
-                    <label for="img_4"></label>
+                    <label for="img_1" id="label_gray"></label>
+                    <div id="click">
+                        <label for="img_2"></label>
+                        <label for="img_3"></label>
+                        <label for="img_4"></label>
+                    </div>
                 </div>
             </div>
         </section>
@@ -450,6 +452,19 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <script>
+    // funzione per cambio colore radio input
+    function changeColor() {
+    document.getElementById('label_gray').style.backgroundColor = 'orangered';
+    }
+    window.onload = changeColor();
+    document.getElementById('click').addEventListener('click' , ()=>{
+        document.getElementById('label_gray').style.backgroundColor = 'lightgray';
+    })
+    document.getElementById('label_gray').addEventListener('click' , ()=>{
+        document.getElementById('label_gray').style.backgroundColor = 'orangered';
+    })
+    </script>
 </body>
 
 </html>
