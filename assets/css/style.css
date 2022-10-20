@@ -704,30 +704,6 @@ textarea {
 
     /* --------- CAROSELLO SLIDE--------- */
 
-    /* .img_slide {
-        width: 214px;
-    }
-
-    .img_slide img {
-        width: 95%;
-    }
-
-    #slider .container {
-        padding-left: 55px;
-        padding-right: 55px;
-    }
-
-    #img_2:checked~.img_slide {
-        transform: translate3d(-635px, 0px, 0px);
-    }
-
-    #img_3:checked~.img_slide {
-        transform: translate3d(-1066px, 0px, 0px);
-    }
-
-    .label label:last-of-type {
-        display: none;
-    } */
     .img_slide {
         width: 227px;
     }

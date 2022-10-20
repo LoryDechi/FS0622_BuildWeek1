@@ -23,24 +23,6 @@ document.getElementById('label_gray').addEventListener('click', () => {
 })
 
 
-// var slideImg = 1;
-// showDivs(slideImg);
-
-// function slideShow(n) {
-//     showDivs(slideImg += n);
-// }
-
-// function showDivs(n) {
-//     var i;
-//     var x = document.getElementsByClassName("radio");
-//     if (n > x.length) { slideImg = 1 }
-//     for (i = 0; i < x.length; i++) {
-//         x[i].ariaChecked = mixed;
-//     }
-
-// }
-
-
 
 
 
