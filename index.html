@@ -26,66 +26,62 @@
 
     </header>
 
-
-
     <div id="navbar">
+        <!-- COME CONISGLIA IL W3C, INSERITO IL LOGO ALL'INTERNO DI UN H1 -->
+        <h1>
+            <img src="assets/images/logo.png" alt="Logo">
+        </h1>
         <nav>
-            <div>
-                <img src="assets/images/logo.png" alt="Logo">
-            </div>
-
-            <label for="menuBottone" id="menu"> <span class="material-symbols-outlined">
-                    menu
-                </span> </label>
-            <input type="checkbox" id="menuBottone">
-            <ul>
+            <ul id="menuList">
                 <li> <a href="#home">HOME</a></li>
-                <li> <a href="#">ABOUT US</a></li>
-                <li> <a href="#">BLOG</a></li>
-                <li> <a href="#">MENU</a></li>
-                <li> <a href="#">NEWS</a></li>
-                <li> <a href="#">CONTACTS</a></li>
-
+                <li> <a href="#chef">ABOUT US</a></li>
+                <li> <a href="#gallery">BLOG</a></li>
+                <li> <a href="#prezzi">MENU</a></li>
+                <li> <a href="#subscribe">NEWS</a></li>
+                <li> <a href="#contatti">CONTACTS</a></li>
             </ul>
         </nav>
+        <span class="material-symbols-outlined" onclick="togglemenu()">
+            menu
+        </span>
     </div>
-    <!--BISOGNA INSERIRE BACKGROUND IMAGE DEL POMODORO CHE RESTA FERMA-->
+
     <main>
         <!--SLIDER CON IMMAGINI-->
         <section id="slider">
             <div class="container">
-                <h3>FEATURED <span class="orange">WORKS</span><span
-                        class="material-symbols-outlined">arrow_forward_ios</span></h3>
+                <h3>FEATURED <span class="orange">WORKS</span><span class="material-symbols-outlined"
+                        onclick="slideShow(1)">arrow_forward_ios</span></h3>
                 <div class="slide">
                     <div class="slide_image">
-                        <input type="radio" name="slide" id="img_1">
-                        <input type="radio" name="slide" id="img_2">
-                        <input type="radio" name="slide" id="img_3">
-                        <input type="radio" name="slide" id="img_4">
+                        <input type="radio" class="radio" name="slide" id="img_1">
+                        <input type="radio" class="radio" name="slide" id="img_2">
+                        <input type="radio" class="radio" name="slide" id="img_3">
+                        <input type="radio" class="radio" name="slide" id="img_4">
 
                         <div class="img_slide img_1">
-                            <img src="assets/images/slider/slider-img-1.jpg" alt="">
+                            <img src="assets/images/slider/slider-img-1.jpg" alt="Torta">
                         </div>
                         <div class="img_slide img_2">
-                            <img src="assets/images/slider/slider-img-2.jpg" alt="">
+                            <img src="assets/images/slider/slider-img-2.jpg" alt="Primo piatto">
                         </div>
                         <div class="img_slide img_3">
-                            <img src="assets/images/slider/slider-img-3.jpg" alt="">
+                            <img src="assets/images/slider/slider-img-3.jpg" alt="Secondo piatto">
                         </div>
                         <div class="img_slide img_4">
-                            <img src="assets/images/slider/slider-img-4.jpg" alt="">
+                            <img src="assets/images/slider/slider-img-4.jpg" alt="Crepes">
                         </div>
                         <div class="img_slide img_1">
-                            <img src="assets/images/slider/slider-img-1.jpg" alt="">
+                            <img src="assets/images/slider/slider-img-1.jpg" alt="Torta">
                         </div>
                         <div class="img_slide img_2">
-                            <img src="assets/images/slider/slider-img-2.jpg" alt="">
+                            <img src="assets/images/slider/slider-img-2.jpg" alt="Primo piatto">
                         </div>
                         <div class="img_slide img_3">
-                            <img src="assets/images/slider/slider-img-3.jpg" alt="">
+                            <img src="assets/images/slider/slider-img-3.jpg" alt="Secondo piatto">
                         </div>
                         <div class="img_slide img_4">
-                            <img src="assets/images/slider/slider-img-4.jpg" alt="">
+                            <img src="assets/images/slider/slider-img-4.jpg" alt="Crepes">
                         </div>
 
                     </div>
@@ -102,7 +98,7 @@
             </div>
         </section>
         <!--SEZIONE CHEF-->
-        <section class="chef">
+        <section id="chef">
             <div>
                 <img class="cuoco" src="assets/images/cooker-img.png" alt="Cuoco" />
                 <h2 class="titoli">
@@ -123,7 +119,7 @@
                 </p>
             </div>
         </section>
-        <!--INIZIO BLOG, BACKGROUND TRASPARENTE-->
+        <!--INIZIO BLOG-->
         <section id="gallery" class="overlay">
 
             <div class="container">
@@ -136,7 +132,7 @@
                 </div>
                 <div class="content">
                     <div class="content_img">
-                        <img src="assets/images/blog/blog-img-1.jpg" />
+                        <img src="assets/images/blog/blog-img-1.jpg" alt="Zuppa di pollo" />
                     </div>
                     <div class="content_body right">
                         <h3>Homestyle Chicken Pot Pie</h3>
@@ -148,7 +144,7 @@
                 </div>
                 <div class="content">
                     <div class="content_img">
-                        <img src="assets/images/blog/blog-img-2.jpg" />
+                        <img src="assets/images/blog/blog-img-2.jpg" alt="Waffles" />
                     </div>
                     <div class="content_body right">
                         <h3>Homestyle Chicken Pot Pie</h3>
@@ -169,7 +165,7 @@
                         </p>
                     </div>
                     <div class="content_img">
-                        <img src="assets/images/blog/blog-img-3.jpg" />
+                        <img src="assets/images/blog/blog-img-3.jpg" alt="Bistecca" />
                     </div>
 
                 </div>
@@ -183,13 +179,13 @@
                         </p>
                     </div>
                     <div class="content_img">
-                        <img src="assets/images/blog/blog-img-4.jpg" />
+                        <img src="assets/images/blog/blog-img-4.jpg" alt="Grigliata" />
                     </div>
 
                 </div>
                 <div class="content">
                     <div class="content_img">
-                        <img src="assets/images/blog/blog-img-5.jpg" />
+                        <img src="assets/images/blog/blog-img-5.jpg" alt="Pancake" />
                     </div>
                     <div class="content_body right">
                         <h3>Homestyle Chicken Pot Pie</h3>
@@ -202,7 +198,7 @@
                 </div>
                 <div class="content">
                     <div class="content_img">
-                        <img src="assets/images/blog/blog-img-6.jpg" />
+                        <img src="assets/images/blog/blog-img-6.jpg" alt="Insalata" />
                     </div>
                     <div class="content_body right">
                         <h3>Homestyle Chicken Pot Pie</h3>
@@ -219,10 +215,9 @@
 
             </div>
 
-            <!--ANCORARE A NAV-->
         </section>
         <!-- MENU E PREZZI--------------------------------------------------------- -->
-        <section class="prezzi">
+        <section id="prezzi">
             <div class="container">
                 <div class="heading">
                     <h2 class="titoli">
@@ -237,8 +232,8 @@
                     <h3>FEATURED <span class="orange"> ON THE WEEK </span></h3>
                     <ul>
                         <li>
-                            <div class="prezzo">
-                                <div class="desc">
+                            <div class="row">
+                                <div class="row-content">
                                     <h2>Pancakes n' Such</h2>
                                     <div class="dotted"></div>
                                     <span>&dollar; 25.00</span>
@@ -249,8 +244,8 @@
                             </div>
                         </li>
                         <li>
-                            <div class="prezzo">
-                                <div class="desc">
+                            <div class="row">
+                                <div class="row-content">
                                     <h2>Homestyle Chicken Pot Pie</h2>
                                     <div class="dotted"></div>
                                     <span>&dollar; 10.00</span>
@@ -261,8 +256,8 @@
                             </div>
                         </li>
                         <li>
-                            <div class="prezzo">
-                                <div class="desc">
+                            <div class="row">
+                                <div class="row-content">
                                     <h2>Cereal, Panecillos y Frutas</h2>
                                     <div class="dotted"></div>
                                     <span>&dollar; 5.00</span>
@@ -273,8 +268,8 @@
                             </div>
                         </li>
                         <li>
-                            <div class="prezzo">
-                                <div class="desc">
+                            <div class="row">
+                                <div class="row-content">
                                     <h2>Meat of Skewers</h2>
                                     <div class="dotted"></div>
                                     <span>&dollar; 15.00</span>
@@ -285,8 +280,8 @@
                             </div>
                         </li>
                         <li>
-                            <div class="prezzo">
-                                <div class="desc">
+                            <div class="row">
+                                <div class="row-content">
                                     <h2>Steak with Garlic and Parsley Risotto</h2>
                                     <div class="dotted"></div>
                                     <span>&dollar; 75.00</span>
@@ -297,8 +292,8 @@
                             </div>
                         </li>
                         <li>
-                            <div class="prezzo">
-                                <div class="desc">
+                            <div class="row">
+                                <div class="row-content">
                                     <h2>Caesar Salad</h2>
                                     <div class="dotted"></div>
                                     <span>&dollar; 7.00</span>
@@ -315,15 +310,14 @@
                 </div>
             </div>
         </section>
-        <!--ancorare al nav BACKGROUND TRASPARENTE-->
-        </section>
+
         <section class="overlay" id="subscribe">
-            <div class="contSub">
+            <div class="container">
                 <h2 class="titoli">SUBSCRIBE <span class="orange">to our</span> NEWSLETTER</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
                 <form class="formSub">
                     <div>
-                        <input type="text" class="input" placeholder="Enter your email to subscribe...">
+                        <input type="text" placeholder="Enter your email to subscribe...">
 
                         <button type="submit">subscribe</button>
 
@@ -401,16 +395,16 @@
                 <h3>PHOTO <span class="orange">STREAM</span></h3>
                 <ul class="flex_photo">
                     <li>
-                        <img src="assets/images/photo/photo-1.jpg" alt="">
+                        <img src="assets/images/photo/photo-1.jpg" alt="Dolce">
                     </li>
                     <li>
-                        <img src="assets/images/photo/photo-2.jpg" alt="">
+                        <img src="assets/images/photo/photo-2.jpg" alt="Panino">
                     </li>
                     <li>
-                        <img src=" assets/images/photo/photo-3.jpg" alt="">
+                        <img src=" assets/images/photo/photo-3.jpg" alt="Verdure">
                     </li>
                     <li>
-                        <img src="assets/images/photo/photo-4.jpg" alt="">
+                        <img src="assets/images/photo/photo-4.jpg" alt="Tortellini">
                     </li>
                 </ul>
             </div>
@@ -452,19 +446,7 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
-    <script>
-    // funzione per cambio colore radio input
-    function changeColor() {
-    document.getElementById('label_gray').style.backgroundColor = 'orangered';
-    }
-    window.onload = changeColor();
-    document.getElementById('click').addEventListener('click' , ()=>{
-        document.getElementById('label_gray').style.backgroundColor = 'lightgray';
-    })
-    document.getElementById('label_gray').addEventListener('click' , ()=>{
-        document.getElementById('label_gray').style.backgroundColor = 'orangered';
-    })
-    </script>
+
 </body>
 
 </html>

@@ -1,11 +1,11 @@
-/* mini reset */
-
+/* MINI RESET */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* REGOLE GENERALI */
 @font-face {
     font-family: myfont;
     src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
@@ -29,6 +29,7 @@ h2 {
 h3 {
     font-size: 20px;
     font-weight: 600;
+    color: #2E2E2E;
 }
 
 p {
@@ -38,8 +39,6 @@ p {
     margin: 0px;
     font-family: myfont;
 }
-
-/*------------------------ NAV---------------------------------- */
 
 a,
 a:active,
@@ -85,7 +84,6 @@ a {
     margin-left: -70px;
 }
 
-
 /* HEADER */
 .material-symbols-outlined {
     color: #e94c3d;
@@ -119,50 +117,37 @@ a {
     opacity: 0.3;
 }
 
+/*------------------------ NAV --------------------------------- */
 #navbar {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-nav {
     width: 95%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
-    margin-top: -60px;
-    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin-top: -59px;
     background: linear-gradient(to left, rgba(255, 255, 255, 0.6), #ffffff);
+    padding: 15px 20px;
 }
 
-/*----------------------------------------------------------------------------------------------------------*/
-
-
-/* menu dropdown */
-#menuBottone {
-    display: none;
+nav {
+    flex: 1;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.6), #ffffff);
 }
 
 nav ul {
-    left: 14px;
-    top: 36px;
+    left: 0;
+    padding-left: 15px;
+    top: 34px;
     position: absolute;
     overflow: hidden;
-    height: 0;
-    width: 95%;
-    flex-basis: 100%;
+    width: 100%;
     margin-top: 25px;
-    animation: fadeOut 1s;
     background: linear-gradient(to left, rgba(255, 255, 255, 0.6), #ffffff);
+    transition: 0.5s;
 }
-
-input[type='checkbox']:checked+ul {
-    height: 260px;
-    animation: fadeIn 1s;
-}
-
 
 nav ul li {
     padding-left: 10px;
@@ -187,15 +172,13 @@ nav ul li a:visited {
     color: #2E2E2E;
 }
 
-
-/* MAIN DA MODIFICARE CON NUOVE MISURE*/
 main section .container {
     width: 95%;
     margin: 0 auto;
 }
 
 
-/*CAROSELLO SLIDE--------------------------------------------------------------------*/
+/*------------------CAROSELLO SLIDE-----------------------*/
 
 #slider {
     padding: 50px 0px;
@@ -229,12 +212,6 @@ main section .container {
     display: none;
 }
 
-
-.label,#click{
-    display: flex;
-    justify-content: center;
-}
-
 .label label {
     height: 10px;
     width: 10px;
@@ -246,6 +223,12 @@ main section .container {
 
 .label label:hover {
     background-color: #e94c3d;
+}
+
+.label,
+#click {
+    display: flex;
+    justify-content: center;
 }
 
 #img_1:checked~.img_slide {
@@ -276,41 +259,28 @@ main section .container {
         'GRAD' 0,
         'opsz' 48;
     position: absolute;
-    right: 35px;
+    right: -5px;
     font-size: 30px;
     color: #938463;
 }
 
-
-
-
-/*SECTION CHEF--------------------------------------------------------------------*/
-.chef {
+/*-----------------------SECTION CHEF-----------------------*/
+#chef {
     text-align: center;
-    padding: 70px 0px;
+    padding: 100px 0px;
     background: #f6f6f6;
 }
 
-.chef h2 {
-    padding: 40px 0;
-    color: #2e2e2e;
-    font-size: 22px;
-}
 
-.chef .orange {
-    font-size: 28px;
-    font-weight: 600;
-}
-
-.chef p {
-    padding: 40px 30px 0px 30px;
+#chef p {
+    padding: 40px 30px;
     color: #959595;
     font-size: 16px;
     line-height: 26px;
 
 }
 
-/*--------------------------------SECTION scacchiera------------------------------------------------------------------*/
+/*-----------------SECTION SCACCHIERA-------------------------*/
 
 #gallery {
     background-image: url('../images/blog/blog-bg.jpg');
@@ -394,30 +364,24 @@ main section .container {
 }
 
 
-/* ---------------------------SECTION MENU E PREZZI---------------- */
+/* --------------SECTION MENU E PREZZI---------------- */
 
-.prezzi {
+#prezzi {
     padding: 70px 15px;
     margin: 0 auto;
 }
 
-.prezzi h2 .orange {
-    font-size: 28px;
-    font-weight: 600;
-}
-
-.prezzi div p {
-    color: #9D9D9D;
+#prezzi div p {
+    color: #949494;
     line-height: 26px;
     font-size: 16px;
 }
-
 
 .titoli+p {
     padding: 40px 0px 0px;
 }
 
-.prezzi .container .heading {
+#prezzi .container .heading {
     text-align: center;
 }
 
@@ -426,29 +390,24 @@ main section .container {
     padding-top: 85px;
 }
 
-.prezzi h3 {
+#prezzi h3 {
     padding: 30px 0;
 }
 
-.prezzi li {
+#prezzi li {
     padding: 21px 0px;
 }
 
-.prezzi li h2 {
+#prezzi li h2 {
     color: #333333;
     margin-bottom: 10px;
 }
 
-.prezzi li p {
-    color: #949494;
-    padding: 12px 0px 0px;
-}
-
-.prezzi li span {
+#prezzi li span {
     color: #938463;
 }
 
-.prezzi a {
+#prezzi a {
     padding: 28px 105px;
     border-radius: 0px;
     background: none;
@@ -463,7 +422,7 @@ main section .container {
     padding: 30px 0;
 }
 
-.prezzi a:hover {
+#prezzi a:hover {
     background-color: #FF4F02;
     color: #ffffff;
 }
@@ -478,7 +437,6 @@ main section .container {
     background-attachment: fixed;
     position: relative;
     padding: 100px 0px;
-
 }
 
 #subscribe h2 {
@@ -492,29 +450,24 @@ main section .container {
     font-size: 25px;
 }
 
-.contSub {
-    position: relative;
-    padding: 40px 15px 0px;
-
-}
-
 #subscribe p {
     text-align: center;
     color: #ffffff;
     padding: 25px 0px;
     font-size: 18px;
-
 }
 
-.formSub {
-    display: block;
-}
-
-.input {
+.formSub div input {
     width: 100%;
     height: 65px;
     padding: 6px 12px;
     margin-bottom: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+#subscribe form input:focus {
+    outline: none;
 }
 
 ::-webkit-input-placeholder {
@@ -538,21 +491,19 @@ main section .container {
     color: #fff;
     font-weight: 500;
     font-size: 14px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 
 
-/* --------------------------------------------SECTION CONTATTI ----------------------------------*/
+/* ------------------ SECTION CONTATTI ---------------------*/
 #contatti {
     padding: 100px 0;
 }
 
 #contatti h2 {
-    position: relative;
     text-align: center;
-    padding: 40px 0;
 }
 
 #contatti h3 {
@@ -601,6 +552,37 @@ textarea {
 
 
 /*-------------------------------FOOTER ------------------------*/
+#footer {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#footer h3 {
+    padding-bottom: 40px;
+    color: #2e2e2e;
+}
+
+#footer h4 {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+#footer ul li {
+    margin-bottom: 25px;
+}
+
+#footer ul li a:hover {
+    background-color: #FF4F02;
+}
+
+#footer #info,
+#blog,
+#photo_social {
+    padding-bottom: 20px;
+}
 
 #footer i {
     color: #555;
@@ -658,53 +640,23 @@ textarea {
 
 #footer-bottom {
     background: #E9E9E9;
-    padding: 13px 20px;
+    padding: 13px 15px;
     text-align: center;
     width: 100%;
+    letter-spacing: 2px;
 }
 
-/* -------------------------------------FOOTER -------------------------*/
-
-
-#footer {
-    padding: 100px 20px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+#footer-bottom p {
+    color: #454545;
+    font-weight: 600;
+    font-size: 12px;
 }
 
-#footer h3 {
-    padding-bottom: 40px;
-    color: #2e2e2e;
-}
+/*----------------------INIZIO MEDIA QUERY------------------- */
 
-#footer h4 {
-    font-size: 18px;
-    font-weight: 500;
-    padding-bottom: 10px;
-}
-
-#footer ul li {
-    margin-bottom: 25px;
-}
-
-#footer ul li a:hover {
-    background-color: #FF4F02;
-}
-
-#footer #info,
-#blog,
-#photo_social {
-    padding-bottom: 20px;
-}
-
-
-
-/*--------------------------------------------------------------------------------INIZIO MEDIA QUERY------------------------------------------------------------------------------------- */
-
-/*--------------------------------- MEDIA QUERY  768px -----------------------*/
 @media screen and (min-width: 768px) {
 
+    /* REGOLE GENERALI */
     .titoli {
         font-size: 36px;
     }
@@ -713,60 +665,46 @@ textarea {
         font-size: 45px;
     }
 
-    /*----------------------------- NAV ----------------------------*/
-
-    nav ul {
-        position: unset;
-        overflow: hidden;
-        height: 0;
-        flex-basis: 100%;
-        margin-top: 25px;
-        animation: unset;
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
-    #navbar nav {
-        align-items: center;
-        margin-right: auto;
-        margin-left: auto;
-        padding: 15px 20px;
+    #footer,
+    main section .container {
+        width: 750px;
     }
 
-    #navbar nav ul {
-        height: 60px;
-        display: flex;
-        justify-content: space-evenly;
-        overflow: visible;
-        flex-basis: 70%;
-        margin-top: 0;
-        background: transparent;
-    }
+    /*----------- NAV -----------*/
 
-    #navbar nav ul li {
-        text-align: center;
-        padding-left: 0;
-        margin: 0 15px 0px 15px;
-    }
-
-    #navbar nav ul li a {
-        padding: 10px 0px;
-        font-size: 15px;
-        display: inline-block;
-        text-align: center;
-    }
-
-    /* -------------------------------HEADER ----------------------------*/
-    #menu {
-        display: none;
-    }
-
-    nav {
-        background: rgba(255, 255, 255, 0.89);
+    #navbar {
+        background: rgba(255, 255, 255, 0.8);
         width: 720px;
     }
 
-    /* ---------------------------MQ CAROSELLO SLIDE----------------- */
+    nav {
+        background: transparent;
+    }
 
-    .img_slide {
+    nav ul {
+        position: initial;
+        overflow: visible;
+        margin-top: -15px;
+    }
+
+    #navbar nav ul li {
+        display: inline-block;
+        padding-left: 0;
+        margin: 0 15px 0px 13px;
+    }
+
+    #navbar .material-symbols-outlined {
+        display: none;
+    }
+
+    /* --------- CAROSELLO SLIDE--------- */
+
+    /* .img_slide {
         width: 214px;
     }
 
@@ -789,22 +727,41 @@ textarea {
 
     .label label:last-of-type {
         display: none;
+    } */
+    .img_slide {
+        width: 227px;
     }
 
-    /* -----------------------------SECTION CHEF------------------------- */
-    .chef h2 {
-        font-size: 36px;
+    .img_slide img {
+        width: 95%;
     }
 
-    .chef .orange {
-        font-size: 36px;
+    #slider .container {
+        padding-left: 35px;
+        padding-right: 35px;
     }
 
-    .chef p {
-        padding: 40px 40px;
+    #img_1:checked~.img_slide {
+        transform: translate3d(0px, 0px, 0px);
     }
 
-    /* -------------------------------SECTION SCACCHIERA --------------------*/
+    #img_2:checked~.img_slide {
+        transform: translate3d(-680px, 0px, 0px);
+    }
+
+    #img_3:checked~.img_slide {
+        transform: translate3d(-1150px, 0px, 0px);
+    }
+
+    .label label:nth-child(3) {
+        display: none;
+    }
+
+    #slider .material-symbols-outlined {
+        right: 57px;
+    }
+
+    /* --------- SECTION SCACCHIERA ---------*/
     #gallery {
         display: flex;
         flex-direction: column;
@@ -852,11 +809,6 @@ textarea {
         margin-left: -15px;
     }
 
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
     .container-btn {
         margin-top: 45px;
         text-align: center;
@@ -867,7 +819,65 @@ textarea {
         font-size: 16px;
     }
 
-    /* ------------------------SECTION CONTATTI --------------------------*/
+    /* --------MQ PREZZI MENU -------*/
+
+    #prezzi {
+        padding: 70px 0;
+        text-align: left;
+    }
+
+    #prezzi ul {
+        padding: 0 0 30px;
+        margin: 0;
+    }
+
+    #prezzi li h2 {
+        display: inline-block;
+        position: relative;
+        z-index: 5;
+        background-color: #ffffff;
+    }
+
+    .row {
+        position: relative;
+    }
+
+    .row .row-content {
+        position: relative;
+    }
+
+    .row .row-content .dotted {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 1px;
+        border: 1px dotted #C9C9C9;
+        margin-top: 20px;
+    }
+
+    .row .row-content span {
+        float: right;
+        color: #938463;
+    }
+
+
+    /*----------SECTION SUBSCRIBE------*/
+
+    #subscribe .formSub div {
+        display: flex;
+        justify-content: center;
+    }
+
+    #subscribe .formSub input {
+        width: 450px;
+    }
+
+    #subscribe .orange {
+        font-size: 45px;
+    }
+
+    /* --------SECTION CONTATTI --------*/
+
     #contatti {
         text-align: center;
     }
@@ -880,76 +890,6 @@ textarea {
         width: 512px;
         height: 50px;
     }
-
-    /* ---------------------------MQ PREZZI MENU -----------------*/
-
-    .prezzi {
-        padding: 70px 0;
-        text-align: left;
-    }
-
-    .prezzi h2 .orange {
-        font-size: 45px;
-    }
-
-    .prezzi ul {
-        padding: 0 0 30px;
-        margin: 0;
-    }
-
-    .prezzi li {
-        padding: 21px 0px;
-    }
-
-    .prezzi li h2 {
-        display: inline-block;
-        position: relative;
-        z-index: 5;
-        background-color: #ffffff;
-    }
-
-    .prezzo .desc .dotted {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 1px;
-        border: 1px dotted #C9C9C9;
-        margin-top: 20px;
-    }
-
-    .prezzo {
-        position: relative;
-    }
-
-    .prezzo .desc {
-        position: relative;
-    }
-
-    .prezzo .desc span {
-        float: right;
-        color: #938463;
-    }
-
-
-    /*MQ FORM*/
-    .formSub div {
-        display: flex;
-        justify-content: center;
-    }
-
-    .formSub input {
-        width: 450px;
-    }
-
-    #subscribe h2 {
-        font-size: 36px;
-    }
-
-    #subscribe .orange {
-        font-size: 45px;
-    }
-
-
 
     /* FOOTER */
     #footer {
@@ -966,30 +906,23 @@ textarea {
         font-size: 15px;
     }
 
-    /* FOOTER */
-    #footer,
-    main section .container {
-        width: 750px;
-    }
 }
 
-/*--------------------------------------------------------------MEDIA QUERY 992px ---------------------------------------------*/
+/*-----------------------MEDIA QUERY 992px -------------------*/
 @media screen and (min-width: 992px) {
 
-    /* -------------------------------Header --------------------------*/
+    /* ---------Header ----------*/
+    #navbar {
+        width: 940px;
+        padding: 35px 40px;
+        margin-top: -84px;
+    }
 
     nav {
-        width: 940px;
-        margin-top: -90px;
-        padding: 25px 20px 25px 30px;
+        flex: none;
     }
 
-    #navbar nav ul {
-        flex-basis: 60%;
-        background: transparent;
-    }
-
-    /*------------------------------- MAIN -----------------------------*/
+    /*--------- MAIN -------------*/
     main section .container {
         width: 970px;
     }
@@ -998,8 +931,8 @@ textarea {
         float: right;
     }
 
-    /* ------------------------------MQ CAROSELLO SLIDE ---------------------*/
-    .img_slide {
+    /* ---------- CAROSELLO SLIDE ---------*/
+    /* .img_slide {
         width: 220px;
     }
 
@@ -1014,16 +947,34 @@ textarea {
 
     .label label:nth-of-type(3) {
         display: none;
+    } */
+    .img_slide {
+        width: 225px;
     }
 
-
-    /* ---------------------------------SECTION CHEF ---------------------*/
-    .chef .orange {
-        font-size: 45px;
+    .img_slide img {
+        width: 100%;
+        height: 200px;
+        padding-right: 30px;
     }
 
+    #img_1:checked~.img_slide {
+        transform: translate3d(0px, 0px, 0px);
+    }
 
-    /* ----------------------------SCACCHIERA -----------------------*/
+    #img_2:checked~.img_slide {
+        transform: translate3d(-898px, 0px, 0px);
+    }
+
+    .label label:nth-child(2) {
+        display: none;
+    }
+
+    #slider .material-symbols-outlined {
+        right: 30px;
+    }
+
+    /* --------SCACCHIERA -------------*/
     #gallery .container .content {
         overflow: hidden;
         width: 50%;
@@ -1060,7 +1011,7 @@ textarea {
         float: right;
     }
 
-    /* ---------------------------FOOTER ----------------------------*/
+    /* ---------FOOTER --------------*/
     #footer {
         flex-direction: row;
         justify-content: center;
@@ -1076,8 +1027,6 @@ textarea {
         flex-wrap: wrap;
     }
 
-    /* -------------------------FOOTER --------------------------*/
-
     #footer #info,
     #blog,
     #photo_social {
@@ -1086,46 +1035,38 @@ textarea {
     }
 }
 
-/*-----------------------------------------------------------------MEDIA QUERY 1200PX --------------------------------------*/
+/*-----------------MEDIA QUERY 1200PX ---------------------------*/
 @media screen and (min-width: 1200px) {
 
-    /*---------------------- MQ nav----------------------*/
-    nav {
-        width: 1140px;
-    }
-
-    #gallery a {
-        padding: 28px 103.5px;
-    }
-
+    /*------ GENERALI----- */
     #footer,
     main section .container {
         width: 1170px;
     }
 
-    #navbar nav ul {
-        flex-basis: 50%;
+    /*---- NAV --------*/
+    #navbar {
+        width: 1140px;
     }
 
+    /* Slider */
 
-}
-
-@keyframes fadeIn {
-    0% {
-        height: 0;
+    #slider .slide .img_slide {
+        width: 275px;
+        padding-bottom: 20px;
     }
 
-    100% {
-        height: 260px;
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        height: 260px;
+    .img_slide img {
+        height: 230px;
+        padding-right: 35px;
     }
 
-    100% {
-        height: 0px;
+    #img_2:checked~.img_slide {
+        transform: translate3d(-1100px, 0px, 0px);
+    }
+
+    /* ------ SCACCHIERA----- */
+    #gallery a {
+        padding: 28px 103.5px;
     }
 }
