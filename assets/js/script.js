@@ -9,7 +9,6 @@ function togglemenu() {
         menuList.style.maxHeight = "0px";
     }
 }
-
 // FUNZIONE CHE REGOLA IL CAMBIO COLORE DEI DOTS NELLO SLIDER
 function changeColor() {
     document.getElementById('label_gray').style.backgroundColor = 'orangered';
@@ -21,12 +20,9 @@ document.getElementById('click').addEventListener('click', () => {
 document.getElementById('label_gray').addEventListener('click', () => {
     document.getElementById('label_gray').style.backgroundColor = 'orangered';
 })
-
 let sliderImages = document.getElementsByClassName("img_slide");
 arrowRight = document.getElementById("toggle-btn");
 current = 0;
-
-
 // Clear all images
 function reset() {
     for (let i = 0; i < sliderImages.length; i++) {
@@ -40,8 +36,6 @@ function startSlide() {
     sliderImages[0].style.display = "block";
     sliderImages[1].style.display = "block";
 }
-
-
 // Show next
 function slideRight() {
     reset();
@@ -49,7 +43,6 @@ function slideRight() {
     sliderImages[current + 2].style.display = "block";
     current++;
 }
-
 // Right arrow click
 arrowRight.addEventListener("click", function () {
     if (current === sliderImages.length - 2) {
@@ -59,6 +52,7 @@ arrowRight.addEventListener("click", function () {
 });
 
 startSlide();
+
 
 
 
