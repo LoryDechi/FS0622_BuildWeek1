@@ -50,37 +50,38 @@
         <!--SLIDER CON IMMAGINI-->
         <section id="slider">
             <div class="container">
-                <h3>FEATURED <span class="orange">WORKS</span><span class="material-symbols-outlined"
-                        onclick="slideShow(1)">arrow_forward_ios</span></h3>
+                <h3>FEATURED <span class="orange">WORKS</span></h3>
+
+                <button id="toggle-btn"> FRECCIA MALEDETTA </button>
                 <div class="slide">
-                    <div class="slide_image">
+                    <div id="page" class="slide_image">
                         <input type="radio" class="radio" name="slide" id="img_1">
                         <input type="radio" class="radio" name="slide" id="img_2">
                         <input type="radio" class="radio" name="slide" id="img_3">
                         <input type="radio" class="radio" name="slide" id="img_4">
 
-                        <div class="img_slide img_1">
+                        <div class="img_slide slide1">
                             <img src="assets/images/slider/slider-img-1.jpg" alt="Torta">
                         </div>
-                        <div class="img_slide img_2">
+                        <div class="img_slide slide1">
                             <img src="assets/images/slider/slider-img-2.jpg" alt="Primo piatto">
                         </div>
-                        <div class="img_slide img_3">
+                        <div class="img_slide slide2">
                             <img src="assets/images/slider/slider-img-3.jpg" alt="Secondo piatto">
                         </div>
-                        <div class="img_slide img_4">
+                        <div class="img_slide slide2">
                             <img src="assets/images/slider/slider-img-4.jpg" alt="Crepes">
                         </div>
-                        <div class="img_slide img_1">
+                        <div class="img_slide slide3">
                             <img src="assets/images/slider/slider-img-1.jpg" alt="Torta">
                         </div>
-                        <div class="img_slide img_2">
+                        <div class="img_slide slide3">
                             <img src="assets/images/slider/slider-img-2.jpg" alt="Primo piatto">
                         </div>
-                        <div class="img_slide img_3">
+                        <div class="img_slide slide4">
                             <img src="assets/images/slider/slider-img-3.jpg" alt="Secondo piatto">
                         </div>
-                        <div class="img_slide img_4">
+                        <div class="img_slide slide4">
                             <img src="assets/images/slider/slider-img-4.jpg" alt="Crepes">
                         </div>
 
@@ -90,9 +91,9 @@
                 <div class="label">
                     <label for="img_1" id="label_gray"></label>
                     <div id="click">
-                        <label for="img_2"></label>
-                        <label for="img_3"></label>
-                        <label for="img_4"></label>
+                        <label id="label-2" for="img_2"></label>
+                        <label id="label-3" for="img_3"></label>
+                        <label id="label-4" for="img_4"></label>
                     </div>
                 </div>
             </div>

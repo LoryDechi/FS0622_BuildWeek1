@@ -231,19 +231,20 @@ main section .container {
     justify-content: center;
 }
 
-#img_1:checked~.img_slide {
+
+#img_1:checked~.img_slide.active {
     transform: translate3d(0px, 0px, 0px);
 }
 
-#img_2:checked~.img_slide {
+#img_2:checked~.img_slide.active {
     transform: translate3d(-548px, 0px, 0px);
 }
 
-#img_3:checked~.img_slide {
+#img_3:checked~.img_slide.active {
     transform: translate3d(-1096px, 0px, 0px);
 }
 
-#img_4:checked~.img_slide {
+#img_4:checked~.img_slide.active {
     transform: translate3d(-1645px, 0px, 0px);
 }
 
@@ -267,13 +268,13 @@ main section .container {
 /*-----------------------SECTION CHEF-----------------------*/
 #chef {
     text-align: center;
-    padding: 100px 0px;
+    padding: 70px 0px;
     background: #f6f6f6;
 }
 
 
 #chef p {
-    padding: 40px 30px;
+    padding: 40px 30px 0;
     color: #959595;
     font-size: 16px;
     line-height: 26px;
@@ -759,6 +760,16 @@ textarea {
 
     #slider .material-symbols-outlined {
         right: 57px;
+    }
+
+    /* SECTION CHEF */
+    #chef {
+        padding: 100px 0px;
+    }
+
+
+    #chef p {
+        padding: 40px 30px;
     }
 
     /* --------- SECTION SCACCHIERA ---------*/

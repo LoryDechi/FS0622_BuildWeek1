@@ -23,25 +23,46 @@ document.getElementById('label_gray').addEventListener('click', () => {
 })
 
 
-// var slideImg = 1;
-// showDivs(slideImg);
-
-// function slideShow(n) {
-//     showDivs(slideImg += n);
-// }
-
-// function showDivs(n) {
-//     var i;
-//     var x = document.getElementsByClassName("radio");
-//     if (n > x.length) { slideImg = 1 }
-//     for (i = 0; i < x.length; i++) {
-//         x[i].ariaChecked = mixed;
-//     }
-
-// }
 
 
 
 
+// Funzione per lo slide del carosello
+let sliderImages = document.getElementsByClassName("img_slide");
+arrowRight = document.getElementById("toggle-btn");
+current = 0;
 
+
+// Clear all images
+function reset() {
+    for (let i = 0; i < sliderImages.length; i++) {
+        sliderImages[i].style.display = "none";
+    }
+}
+
+// Initial slide
+function startSlide() {
+    reset();
+    sliderImages[0].style.display = "block";
+    sliderImages[1].style.display = "block";
+}
+
+
+// Show next
+function slideRight() {
+    reset();
+    sliderImages[current + 1].style.display = "block";
+    sliderImages[current + 2].style.display = "block";
+    current++;
+}
+
+// Right arrow click
+arrowRight.addEventListener("click", function () {
+    if (current === sliderImages.length - 2) {
+        current = 0;
+    }
+    slideRight();
+});
+
+startSlide();
 
