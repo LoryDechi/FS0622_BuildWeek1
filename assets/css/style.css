@@ -61,7 +61,6 @@ a {
     font-weight: 600
 }
 
-
 .orange {
     color: #FF4F02;
 }
@@ -177,9 +176,7 @@ main section .container {
     margin: 0 auto;
 }
 
-
 /*------------------CAROSELLO SLIDE-----------------------*/
-
 #slider {
     padding: 50px 0px;
     z-index: -10;
@@ -253,16 +250,19 @@ main section .container {
     color: #2e2e2e;
 }
 
-#slider .material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 800,
-        'GRAD' 0,
-        'opsz' 48;
-    position: absolute;
-    right: -5px;
+#slider .arrow_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#slider i {
     font-size: 30px;
     color: #938463;
+    cursor: pointer;
+}
+
+#slider .active {
+    background-color: orangered;
 }
 
 /*-----------------------SECTION CHEF-----------------------*/
@@ -282,7 +282,6 @@ main section .container {
 }
 
 /*-----------------SECTION SCACCHIERA-------------------------*/
-
 #gallery {
     background-image: url('../images/blog/blog-bg.jpg');
     background-repeat: no-repeat;
@@ -364,9 +363,7 @@ main section .container {
     padding: 28px 85px;
 }
 
-
 /* --------------SECTION MENU E PREZZI---------------- */
-
 #prezzi {
     padding: 70px 15px;
     margin: 0 auto;
@@ -428,9 +425,7 @@ main section .container {
     color: #ffffff;
 }
 
-
 /* -------------------------SECITON SUBSCRIBE --------------------*/
-
 #subscribe {
     background-image: url(../images/subscribe-bg.jpg);
     background-repeat: no-repeat;
@@ -496,8 +491,6 @@ main section .container {
     text-transform: uppercase;
 }
 
-
-
 /* ------------------ SECTION CONTATTI ---------------------*/
 #contatti {
     padding: 100px 0;
@@ -550,7 +543,6 @@ textarea {
     font-size: 24px;
     font-family: myfont;
 }
-
 
 /*-------------------------------FOOTER ------------------------*/
 #footer {
@@ -654,7 +646,6 @@ textarea {
 }
 
 /*----------------------INIZIO MEDIA QUERY------------------- */
-
 @media screen and (min-width: 768px) {
 
     /* REGOLE GENERALI */
@@ -677,7 +668,6 @@ textarea {
     }
 
     /*----------- NAV -----------*/
-
     #navbar {
         background: rgba(255, 255, 255, 0.8);
         width: 720px;
@@ -704,31 +694,6 @@ textarea {
     }
 
     /* --------- CAROSELLO SLIDE--------- */
-
-    /* .img_slide {
-        width: 214px;
-    }
-
-    .img_slide img {
-        width: 95%;
-    }
-
-    #slider .container {
-        padding-left: 55px;
-        padding-right: 55px;
-    }
-
-    #img_2:checked~.img_slide {
-        transform: translate3d(-635px, 0px, 0px);
-    }
-
-    #img_3:checked~.img_slide {
-        transform: translate3d(-1066px, 0px, 0px);
-    }
-
-    .label label:last-of-type {
-        display: none;
-    } */
     .img_slide {
         width: 227px;
     }
@@ -756,20 +721,6 @@ textarea {
 
     .label label:nth-child(3) {
         display: none;
-    }
-
-    #slider .material-symbols-outlined {
-        right: 57px;
-    }
-
-    /* SECTION CHEF */
-    #chef {
-        padding: 100px 0px;
-    }
-
-
-    #chef p {
-        padding: 40px 30px;
     }
 
     /* --------- SECTION SCACCHIERA ---------*/
@@ -831,7 +782,6 @@ textarea {
     }
 
     /* --------MQ PREZZI MENU -------*/
-
     #prezzi {
         padding: 70px 0;
         text-align: left;
@@ -871,9 +821,7 @@ textarea {
         color: #938463;
     }
 
-
     /*----------SECTION SUBSCRIBE------*/
-
     #subscribe .formSub div {
         display: flex;
         justify-content: center;
@@ -888,7 +836,6 @@ textarea {
     }
 
     /* --------SECTION CONTATTI --------*/
-
     #contatti {
         text-align: center;
     }
@@ -916,7 +863,6 @@ textarea {
         margin-right: 20px;
         font-size: 15px;
     }
-
 }
 
 /*-----------------------MEDIA QUERY 992px -------------------*/
@@ -943,22 +889,6 @@ textarea {
     }
 
     /* ---------- CAROSELLO SLIDE ---------*/
-    /* .img_slide {
-        width: 220px;
-    }
-
-    .img_slide img {
-        width: 100%;
-        padding-right: 30px;
-    }
-
-    #img_2:checked~.img_slide {
-        transform: translate3d(-880px, 0px, 0px);
-    }
-
-    .label label:nth-of-type(3) {
-        display: none;
-    } */
     .img_slide {
         width: 225px;
     }
@@ -979,10 +909,6 @@ textarea {
 
     .label label:nth-child(2) {
         display: none;
-    }
-
-    #slider .material-symbols-outlined {
-        right: 30px;
     }
 
     /* --------SCACCHIERA -------------*/
@@ -1061,7 +987,6 @@ textarea {
     }
 
     /* Slider */
-
     #slider .slide .img_slide {
         width: 275px;
         padding-bottom: 20px;

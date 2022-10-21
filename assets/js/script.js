@@ -23,46 +23,70 @@ document.getElementById('label_gray').addEventListener('click', () => {
 })
 
 
+// Script per la gestione e il funzionamento dello slider
 
-
-
-
-// Funzione per lo slide del carosello
 let sliderImages = document.getElementsByClassName("img_slide");
-arrowRight = document.getElementById("toggle-btn");
-current = 0;
+let arrowRight = document.getElementById("toggle-btn");
+currentImg = 0;
 
-
-// Clear all images
-function reset() {
-    for (let i = 0; i < sliderImages.length; i++) {
-        sliderImages[i].style.display = "none";
+function slideContainer(a) {
+    // Reset di tutte le immagini
+    function reset() {
+        for (let i = 0; i < sliderImages.length; i++) {
+            sliderImages[i].style.display = "none";
+        }
+    }
+    if (a) {
+        // Immagini mostrate inizialmente
+        function startSlide() {
+            reset();
+            sliderImages[0].style.display = "block";
+            sliderImages[1].style.display = "block";
+        }
+        // funzione che cambia il display allo scorrimento
+        function slideRight() {
+            reset();
+            sliderImages[currentImg + 1].style.display = "block";
+            sliderImages[currentImg + 2].style.display = "block";
+            currentImg++;
+        }
+        // funzione che al click scatena l'evento
+        arrowRight.addEventListener("click", function () {
+            if (currentImg === sliderImages.length - 2) {
+                currentImg = 0;
+            }
+            slideRight();
+        });
+        startSlide();
+    } else {
+        // Immagini mostrate inizialmente in caso di cambio Viewport
+        function startSlide() {
+            reset();
+            sliderImages[0].style.display = "block";
+            sliderImages[1].style.display = "block";
+            sliderImages[2].style.display = "block";
+            sliderImages[3].style.display = "block";
+        }
+        // funzione che cambia il display allo scorrimento con Viewport piu grande di 576
+        function slideRight() {
+            reset();
+            sliderImages[currentImg + 1].style.display = "block";
+            sliderImages[currentImg + 2].style.display = "block";
+            sliderImages[currentImg + 3].style.display = "block";
+            sliderImages[currentImg + 4].style.display = "block";
+            currentImg++;
+        }
+        // funzione che al click scatena l'evento
+        arrowRight.addEventListener("click", function () {
+            if (currentImg === sliderImages.length - 4) {
+                currentImg = 0;
+            }
+            slideRight();
+        });
+        startSlide();
     }
 }
-
-// Initial slide
-function startSlide() {
-    reset();
-    sliderImages[0].style.display = "block";
-    sliderImages[1].style.display = "block";
-}
-
-
-// Show next
-function slideRight() {
-    reset();
-    sliderImages[current + 1].style.display = "block";
-    sliderImages[current + 2].style.display = "block";
-    current++;
-}
-
-// Right arrow click
-arrowRight.addEventListener("click", function () {
-    if (current === sliderImages.length - 2) {
-        current = 0;
-    }
-    slideRight();
-});
-
-startSlide();
+slideContainer(a);
+// Aggiunta di un Breakpoint per far subentrare la seconda funzione al cambio Viewport
+var a = window.matchMedia("(min-width: 565px)");
 
