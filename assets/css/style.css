@@ -230,19 +230,19 @@ main section .container {
 }
 
 
-#img_1:checked~.img_slide.active {
+#img_1:checked~.img_slide {
     transform: translate3d(0px, 0px, 0px);
 }
 
-#img_2:checked~.img_slide.active {
+#img_2:checked~.img_slide {
     transform: translate3d(-548px, 0px, 0px);
 }
 
-#img_3:checked~.img_slide.active {
+#img_3:checked~.img_slide {
     transform: translate3d(-1096px, 0px, 0px);
 }
 
-#img_4:checked~.img_slide.active {
+#img_4:checked~.img_slide {
     transform: translate3d(-1645px, 0px, 0px);
 }
 
